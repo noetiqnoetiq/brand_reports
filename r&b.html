@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px;
+        color: #333;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+        border-bottom: 3px solid #333;
+        padding-bottom: 20px;
+      }
+
+      .confidential {
+        color: #cc0000;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 28px;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      h2 {
+        font-size: 24px;
+        color: #222;
+        border-bottom: 2px solid #666;
+        padding-bottom: 10px;
+        margin-top: 40px;
+      }
+
+      h3 {
+        font-size: 20px;
+        color: #444;
+        margin-top: 25px;
+      }
+
+      .section {
+        margin-bottom: 30px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .important-note {
+        background-color: #f8f8f8;
+        border-left: 4px solid #cc0000;
+        padding: 15px;
+        margin: 20px 0;
+      }
+
+      .data-point {
+        font-weight: bold;
+        color: #222;
+      }
+
+      .footer {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 12px;
+        color: #666;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+      }
+
+      .chart-container {
+        background: #f8f8f8;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+      }
+
+      .chart-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #444;
+      }
+
+      .bar-chart {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .bar-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .bar-label {
+        width: 120px;
+        text-align: right;
+        font-size: 14px;
+      }
+
+      .bar-container {
+        flex-grow: 1;
+        height: 30px;
+        background: #eee;
+        border-radius: 4px;
+      }
+
+      .bar {
+        height: 100%;
+        background: #444;
+        border-radius: 4px;
+        position: relative;
+      }
+
+      .bar-value {
+        position: absolute;
+        right: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+      }
+
+      .competitor-note {
+        background-color: #f8f8f8;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="confidential">CONFIDENTIAL</div>
+      <h1>RAT & BOA STRATEGIC ANALYSIS DOSSIER (DRESSES)</h1>
+      <div style="margin-top: 10px; color: #666">February 2025</div>
+    </div>
+
+    <div class="section">
+      <h2>1. Opening Summary</h2>
+      <p>
+        Rat & Boa ("R&B") is positioned in the Lower-Mid price tier (average
+        £245), alongside brands like Bec & Bridge (£255) and House of CB (£290).
+        The company has decided to incrementally elevate R&B's market position
+        into a Mid-Tier brand over the coming seasons, aiming to raise the
+        Weighted Average Price (WAP) while preserving the label's signature
+        sultry DNA and safeguarding its core revenue at entry-level price
+        points.
+      </p>
+
+      <div class="chart-container">
+        <div class="chart-title">Key Competitor Price Positioning</div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label">House of CB</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 100%">
+                <span class="bar-value">£290</span>
+              </div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Bec & Bridge</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 88%">
+                <span class="bar-value">£255</span>
+              </div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Rat & Boa</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 84%">
+                <span class="bar-value">£245</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="competitor-note">
+        <strong>Key Market Competition:</strong> Based on style similarity,
+        market presence, and pricing analysis:
+        <ul>
+          <li>
+            Bec & Bridge: Highest overall threat (44%), with 80% style match and
+            55% market presence. Price point £255 (+£10 vs R&B)
+          </li>
+          <li>
+            House of CB: Second highest threat (40%), combining 65% style match
+            with strongest market presence (62%). Price point £290 (+£45 vs R&B)
+          </li>
+          <li>
+            Farm Rio: Third ranked threat (30%), showing highest style alignment
+            (102%) but smaller market presence (30%). Price point £272 (+£27 vs
+            R&B)
+          </li>
+        </ul>
+      </div>
+
+      <div class="important-note">
+        <strong>Important Note:</strong> R&B has repeatedly heard from potential
+        customers that they "love the brand but can't wear any of it," implying
+        that many find current designs too sheer, too sexy, or not modest
+        enough. Addressing this feedback can unlock a new audience while
+        maintaining R&B's alluring aesthetic.
+      </div>
+
+      <p>This report draws upon two key data sets:</p>
+      <ul>
+        <li>Best Seller Data (Dresses)</li>
+        <li>Competitor Dress Attribute Adoption vs. R&B usage</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2. Key Observations from Data</h2>
+
+      <h3>Signature Prints & Sheer Fabric</h3>
+      <p>
+        Rat & Boa's best sellers—e.g. Valentina, Fiorella, Athena—center on bold
+        prints, semi-sheer finishes, and bias-cut silhouettes. These elements
+        define the brand's seductive and glamorous appeal.
+      </p>
+
+      <div class="chart-container">
+        <div class="chart-title">Key Attribute Adoption Among Competitors</div>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <div class="bar-label">Cotton Usage</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 90%">
+                <span class="bar-value">90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Bra-Friendly</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 9%">
+                <span class="bar-value">9%</span>
+              </div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">Modesty Features</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 50%">
+                <span class="bar-value">50%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Fabrics & Support Features</h3>
+      <ul>
+        <li>
+          <span class="data-point">Cotton:</span> Approximately 90% of
+          competitor brands incorporate cotton dresses, yielding hundreds of
+          relevant SKUs. Our analysis shows 694 competitor cotton dresses—a
+          stark difference from R&B's near-absence of cotton styles. Market
+          leaders in cotton adoption include Pucci (64% of range), COS (54% of
+          range), and Tropic of C (50% of range).
+        </li>
+        <li>
+          <span class="data-point">Bra-Friendly & Structured:</span> About 9% of
+          competitor dresses explicitly highlight "bra-friendly," while numerous
+          brands offer underwire or boning. Notable leaders include Clio
+          Peppiatt (100% of range includes support features), Hunza G (90% of
+          range), and House of CB (16% of range). For specific bust support,
+          Hunza G leads with 60% of their range.
+        </li>
+        <li>
+          <span class="data-point">Modesty & Coverage:</span> Over half of
+          competitor brands provide modest attributes through sleeve variations,
+          bra-friendly designs, and additional coverage options. Key examples
+          include Proenza Schouler (46% of range with short sleeves), Bec &
+          Bridge (46% with bra-friendly designs), and Toteme (13% featuring cap
+          sleeves).
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Key Rationale for Broadening the Range</h2>
+      <ul>
+        <li>
+          <strong>Untapped Consumer Segments:</strong> Bust support, modest
+          coverage, and more accessible fabrications enable R&B to cater to
+          those who love the brand's style but find current pieces too revealing
+          or impractical.
+        </li>
+        <li>
+          <strong>Higher Margins & Brand Elevation:</strong> Introducing dress
+          styles in the £335–£495 range—or even £550+—creates room for margin
+          growth and ensures R&B looks and feels more premium.
+        </li>
+        <li>
+          <strong>Maintaining DNA with Added Elements:</strong> R&B's trademark
+          bias cuts, cowl necklines, and vivid prints remain at the core; the
+          difference lies in enhancing them with coverage, structural details,
+          and new fabric types.
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Detailed Opportunities</h2>
+
+      <h3>(1) Bra-Friendly & Bust Support</h3>
+      <p>
+        Competitor data indicates around 9% explicit bra-friendly usage, plus
+        widespread underwire/boning from major labels. Rat & Boa adopting
+        carefully integrated support features can command higher prices and
+        accommodate a broader audience.
+      </p>
+
+      <h3>(2) Cotton & Daywear</h3>
+      <p>
+        With around 694 competitor cotton dresses on record, the market heavily
+        embraces breathable, less formal options—an area R&B largely misses.
+      </p>
+
+      <h3>(3) Structured Silhouettes</h3>
+      <p>
+        Underwire, boning, or adjustable shaping can evolve R&B's slip dress
+        heritage into formal or supportive lines—often priced at the upper end.
+      </p>
+
+      <h3>(4) Sleeves & Coverage</h3>
+      <p>
+        Analysis reveals that over half of competitor brands incorporate modest
+        attributes through strategic design elements including:
+      </p>
+      <ul>
+        <li>Varied sleeve lengths (short/cap/long)</li>
+        <li>Enhanced coverage options</li>
+        <li>Bra-friendly construction</li>
+        <li>Lined fabric alternatives</li>
+        <li>Adjustable coverage features</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>5. Conclusion</h2>
+      <p>
+        By addressing coverage, bust support, and cotton daywear—all supported
+        by competitor data—Rat & Boa can confidently transition from Lower-Mid
+        to a Mid-Tier standing. The essence of the brand remains, but the
+        product line broadens to serve a wider audience, capturing:
+      </p>
+      <ul>
+        <li>Under-served segments: coverage, modesty, bra-friendly fits</li>
+        <li>Higher price points & margins: fueling brand evolution</li>
+        <li>
+          Enhanced market positioning: more inclusive, more premium, and better
+          poised for wholesale expansion
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      CONFIDENTIAL & PROPRIETARY | RAT & BOA INTERNAL USE ONLY | © 2025
+    </div>
+  </body>
+</html>
