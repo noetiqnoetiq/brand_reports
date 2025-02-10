@@ -50,13 +50,17 @@
         margin-bottom: 10px;
       }
 
-      h1 {
+      /* Add/Update this rule to make h1 a flex container */
+      .header h1 {
+        display: flex;            /* Turn on flex layout */
+        align-items: center;      /* Vertically center the logo + text */
+        justify-content: center;  /* Center them horizontally as a group */
+        gap: 10px;                /* Space between the logo and text */
         font-size: 28px;
         margin: 0;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
-
       h2 {
         font-size: 24px;
         color: #222;
