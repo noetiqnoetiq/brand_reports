@@ -3,6 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <style>
+      /* -----------------------------------------
+         NEW: Rat & Boa brand logo (top-left)
+         ----------------------------------------- */
+      .brand-logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 9999; /* Ensure it stays on top */
+      }
+      .brand-logo img {
+        width: 160px; /* 2x the size of the Noetiq (80px) watermark */
+        height: auto;
+      }
+
       .watermark {
         position: fixed;
         bottom: 20px;
@@ -13,19 +27,18 @@
         opacity: 0.8;
         z-index: 1000;
       }
-      
       .watermark img {
-          width: 80px;
-          height: auto;
-          margin-bottom: 5px;
+        width: 80px;
+        height: auto;
+        margin-bottom: 5px;
       }
-      
       .watermark-text {
-          font-size: 12px;
-          color: #666;
-          text-transform: lowercase;
-          letter-spacing: 1px;
+        font-size: 12px;
+        color: #666;
+        text-transform: lowercase;
+        letter-spacing: 1px;
       }
+
       body {
         font-family: 'Arial', sans-serif;
         line-height: 1.6;
@@ -168,10 +181,18 @@
     </style>
   </head>
   <body>
-    <div class="watermark">
-      <img src="Noetiq Black.png" alt="Noetiq" />
-      <div class="watermark-text">fashion insights</div>
+
+    <!-- Rat & Boa Brand Logo (Top-Left) -->
+    <div class="brand-logo">
+      <img src="Rat_and_Boa_logo_(2023).png" alt="Rat & Boa Logo">
     </div>
+
+    <!-- Noetiq Watermark (Bottom-Right) -->
+    <div class="watermark">
+      <img src="Noetiq Black.png" alt="Noetiq">
+      <div class="watermark-text">Fashion Strategy & Market Insights</div>
+    </div>
+
     <div class="header">
       <div class="confidential">CONFIDENTIAL</div>
       <h1>RAT & BOA STRATEGIC ANALYSIS DOSSIER (DRESSES)</h1>
@@ -180,15 +201,17 @@
 
     <div class="section">
       <h2>1. Opening Summary</h2>
-    <p>
-        Rat & Boa ("R&B") is positioned in the Lower-Mid price tier (average 
-        £245), alongside brands like Bec & Bridge (£255) and House of CB (£290). 
-        The company intends to incrementally elevate R&B's market position 
-        towards the Mid-Tier segment in the future, aiming to raise the 
-        Weighted Average Price (WAP) and product offering accordingly, while preserving the label's signature 
-        DNA and safeguarding its core revenue at entry-level price 
-        points.
-    </p>
+     <p>
+       Rat & Boa ("R&B") is positioned in the Lower-Mid price tier (average 
+       £245), alongside brands like Bec & Bridge (£255) and House of CB (£290). 
+       Having identified margin constraints that currently limit wholesale expansion, 
+       the company plans to strategically elevate its market position towards the 
+       Mid-Tier segment. This will be achieved by introducing new core bestsellers 
+       with improved margins and gradually raising the Weighted Average Price (WAP). 
+       This evolution will create a more omnichannel-ready business model while 
+       preserving the label's signature DNA and maintaining strategic entry-level 
+       price points to protect core revenue streams.
+     </p>
 
       <div class="chart-container">
         <div class="chart-title">Key Competitor Price Positioning</div>
@@ -301,9 +324,7 @@
           <span class="data-point">Cotton:</span> Approximately 90% of
           competitor brands incorporate cotton dresses, yielding hundreds of
           relevant SKUs. Our analysis shows 694 competitor cotton dresses—a
-          stark difference from R&B's near-absence of cotton styles. Market
-          leaders in cotton adoption include Pucci (64% of range), COS (54% of
-          range), and Tropic of C (50% of range).
+          stark difference from R&B's near-absence of cotton styles.
         </li>
         <li>
           <span class="data-point">Bra-Friendly & Structured:</span> About 9% of
@@ -337,8 +358,10 @@
         </li>
         <li>
           <strong>Maintaining DNA with Added Elements:</strong> R&B's trademark
-          bias cuts, Maxi Length, cowl necklines, and vivid prints remain at the core; the
-          opportunity lies in enhancing the assortment to capture more market share currently dominated by direct competitors with more balanced dress offerings.
+          bias cuts, Maxi Length, cowl necklines, and vivid prints remain at the
+          core; the opportunity lies in enhancing the assortment to capture
+          more market share currently dominated by competitors with balanced
+          offerings.
         </li>
       </ul>
     </div>
@@ -357,8 +380,10 @@
       <h3>(2) Cotton & Daywear</h3>
       <p>
         With around 694 competitor cotton dresses on record, the market heavily
-        embraces breathable, less formal options—an area R&B largely misses.
+        embraces cotton dresses while R&B doesn't, missing out on this popular casual and breathable option
       </p>
+
+      
 
       <h3>(3) Structured Silhouettes</h3>
       <p>
@@ -368,7 +393,7 @@
 
       <h3>(4) Sleeves & Coverage</h3>
       <p>
-        Analysis reveals that over half of competitor brands incorporate modest
+        Analysis reveals that over half of competitor brands incorporate 'modesty'
         attributes through strategic design elements including:
       </p>
       <ul>
@@ -382,18 +407,22 @@
 
     <div class="section">
       <h2>5. Conclusion</h2>
-      <p>
-        Rat & Boa has numerous opportunities to elevate its position from lower-middle segment
-        to a Mid-Tier standing. The brands core identity remains intact, as its
-        product line broadens to serve a wider audience, capturing:
-      </p>
-      <ul>
-        <li>Under-served segments: coverage, modesty, bra-friendly fits</li>
-        <li>Higher price points & margins: fueling brand evolution</li>
-        <li>
-          Enhanced market positioning: more inclusive, more premium, and better
-          poised for wholesale expansion
-        </li>
+    <p>
+       Rat & Boa has significant opportunities to elevate its market position 
+       through strategic price increases and expanded market reach. By raising 
+       its weighted average price point while diversifying into new segments, 
+       the brand can attract both higher-spending customers and an entirely new 
+       consumer base seeking more versatile options. This evolution will boost 
+       margins, build a wholesale-friendly business model, and help transition R&B 
+       from the lower-mid segment to become a true mid-tier brand, while maintaining 
+       its core identity and capturing key opportunities in:
+     </p>
+       <li>Under-served segments: coverage, modesty, bra-friendly fits</li>
+       <li>Higher price points & margins: fueling brand evolution</li>
+       <li>
+         Enhanced market positioning: more inclusive, more premium, and better
+         poised for wholesale expansion
+       </li>
       </ul>
     </div>
 
