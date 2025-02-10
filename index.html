@@ -126,7 +126,7 @@
       .bar-chart {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
       }
 
       .bar-row {
@@ -135,8 +135,9 @@
         gap: 10px;
       }
 
+      /* Increased min-width for labels so longer text doesn't get cut off */
       .bar-label {
-        width: 120px;
+        min-width: 180px;
         text-align: right;
         font-size: 14px;
       }
@@ -146,6 +147,7 @@
         height: 30px;
         background: #eee;
         border-radius: 4px;
+        position: relative;
       }
 
       .bar {
@@ -155,12 +157,15 @@
         position: relative;
       }
 
+      /* Position the value slightly from the right inside the bar */
       .bar-value {
         position: absolute;
-        right: -40px;
+        right: 8px;
         top: 50%;
         transform: translateY(-50%);
         font-size: 14px;
+        white-space: nowrap;
+        color: #fff;
       }
 
       .competitor-note {
@@ -288,46 +293,38 @@
         define the brand's seductive appeal.
       </p>
 
-    <div class="chart-container">
+      <div class="chart-container">
         <div class="chart-title">Key Details Absent or Under-Represented vs Competitors</div>
         <div class="bar-chart">
           <div class="bar-row">
-            <div class="bar-label" style="min-width: 150px; padding-right: 10px">Cotton Usage</div>
-            <div class="bar-container" style="flex-grow: 1; position: relative;">
-              <div class="bar" style="width: 90%; height: 30px; background-color: #444;">
-                <span class="bar-value" style="position: absolute; right: -140px; top: 50%; transform: translateY(-50%); white-space: nowrap;">
-                  90% competitor adoption
-                </span>
+            <div class="bar-label">Cotton Usage</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 90%;">
+                <span class="bar-value">90% competitor adoption</span>
               </div>
             </div>
           </div>
-          <div class="bar-row" style="margin-top: 15px;">
-            <div class="bar-label" style="min-width: 150px; padding-right: 10px">Mid-Length Sleeve Options</div>
-            <div class="bar-container" style="flex-grow: 1; position: relative;">
-              <div class="bar" style="width: 51.61%; height: 30px; background-color: #444;">
-                <span class="bar-value" style="position: absolute; right: -140px; top: 50%; transform: translateY(-50%); white-space: nowrap;">
-                  51.61% competitor adoption
-                </span>
+          <div class="bar-row">
+            <div class="bar-label">Mid-Length Sleeve Options</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 51.61%;">
+                <span class="bar-value">51.61% competitor adoption</span>
               </div>
             </div>
           </div>
-          <div class="bar-row" style="margin-top: 15px;">
-            <div class="bar-label" style="min-width: 150px; padding-right: 10px">Bra-Friendly</div>
-            <div class="bar-container" style="flex-grow: 1; position: relative;">
-              <div class="bar" style="width: 46.24%; height: 30px; background-color: #444;">
-                <span class="bar-value" style="position: absolute; right: -140px; top: 50%; transform: translateY(-50%); white-space: nowrap;">
-                  46.24% competitor adoption
-                </span>
+          <div class="bar-row">
+            <div class="bar-label">Bra-Friendly</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 46.24%;">
+                <span class="bar-value">46.24% competitor adoption</span>
               </div>
             </div>
           </div>
-          <div class="bar-row" style="margin-top: 15px;">
-            <div class="bar-label" style="min-width: 150px; padding-right: 10px">Non-Sheer Styles</div>
-            <div class="bar-container" style="flex-grow: 1; position: relative;">
-              <div class="bar" style="width: 95.15%; height: 30px; background-color: #444;">
-                <span class="bar-value" style="position: absolute; right: -140px; top: 50%; transform: translateY(-50%); white-space: nowrap;">
-                  95.15% market average
-                </span>
+          <div class="bar-row">
+            <div class="bar-label">Non-Sheer Styles</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 95.15%;">
+                <span class="bar-value">95.15% market average</span>
               </div>
             </div>
           </div>
@@ -351,13 +348,13 @@
           <strong>Non-Sheer Styles:</strong> Market average shows 95.15% non-sheer styles, compared to R&B's 62.62%, highlighting a significant gap in modest options.
         </li>
       </ul>
+    </div>
 
     <!-- SECTION 3: Over-Indexed Key Attributes -->
     <div class="section">
       <h2>3. Over-Indexed Key Attributes & USP</h2>
       <p>
         Beyond competitor gaps, Rat & Boa demonstrates strength in several key attributes, particularly <strong>Maxi</strong> lengths (55.14% of collection), <strong>Printed</strong> styles (49.53%), and balanced coverage options including significant long sleeve offerings (24 SKUs) alongside its signature <strong>Sheer</strong> finishes (37.38%). While these features are core to R&B's identity and present a strong USP, strategic diversification in coverage options could help attract broader consumer segments while maintaining the brand's distinctive appeal.
-      </p>
       </p>
 
       <div class="chart-container">
@@ -408,8 +405,7 @@
       <h2>4. Key Rationale for Broadening the Range</h2>
       <ul>
         <li>
-        <strong>Expanding Consumer Appeal:</strong> While R&B already offers some coverage options through maxi lengths and long sleeves, there's opportunity to build on this foundation with additional bust support options and varied coverage styles to complement the existing range, attracting those drawn to the brand's aesthetic who may be seeking more versatility in their wardrobe.
-      </li>
+          <strong>Expanding Consumer Appeal:</strong> While R&B already offers some coverage options through maxi lengths and long sleeves, there's opportunity to build on this foundation with additional bust support options and varied coverage styles to complement the existing range, attracting those drawn to the brand's aesthetic who may be seeking more versatility in their wardrobe.
         </li>
         <li>
           <strong>Higher Margins & Brand Elevation:</strong> Introducing dress
@@ -462,7 +458,6 @@
         <li>Lined fabric alternatives (current adoption 19.63% vs market 27.01%)</li>
         <li>Adjustable straps (current offering 25.23% of range)</li>
       </ul>
-      
     </div>
 
     <!-- SECTION 6: Conclusion -->
