@@ -16,7 +16,6 @@
         z-index: 1000;
       }
       .watermark img {
-        /* Increased from 80px to 96px (~20% larger) */
         width: 96px;
         height: auto;
         margin-bottom: 5px;
@@ -29,10 +28,11 @@
         margin: 0 auto;
         padding: 40px;
         color: #333;
-        text-align: left;
       }
 
+      /* HEADER STYLING */
       .header {
+        text-align: center;        /* Center all header text/elements */
         margin-bottom: 40px;
         border-bottom: 3px solid #333;
         padding-bottom: 20px;
@@ -46,26 +46,39 @@
         margin-bottom: 10px;
       }
 
-      .header img {
-        vertical-align: middle;
-        width: 160px;
-        margin-right: 10px;
+      /* Flex container for the logo + main title in one row */
+      .header-top {
+        display: flex;
+        justify-content: center;   /* center horizontally */
+        align-items: center;      /* center vertically */
+        gap: 10px;                /* space between logo and text */
+        margin-bottom: 10px;      /* spacing before next line */
       }
 
-      .header h1 {
-        display: inline;
+      .header-top img {
+        width: 160px;
+        vertical-align: middle;
+      }
+
+      .header-top h1 {
         font-size: 28px;
         margin: 0;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
 
-      .header h2 {
+      .header-subtitle {
         font-size: 20px;
-        margin: 10px 0;
+        margin: 10px 0 5px 0;
         color: #666;
       }
 
+      .header-date {
+        color: #666;
+        margin-bottom: 0;
+      }
+
+      /* SECTION TITLES */
       h2.section-title {
         font-size: 24px;
         color: #222;
@@ -76,6 +89,7 @@
 
       .section {
         margin-bottom: 30px;
+        text-align: left; /* Normal left alignment for content sections */
       }
 
       table {
@@ -121,19 +135,26 @@
     </style>
   </head>
   <body>
+
     <!-- Watermark (Bottom-Right) -->
     <div class="watermark">
-      <!-- Subheading removed; only the Noetiq logo remains -->
       <img src="Noetiq Black.png" alt="Noetiq">
     </div>
 
-    <!-- Header with logo -->
+    <!-- HEADER -->
     <div class="header">
+      <!-- Top label (CONFIDENTIAL) -->
       <div class="confidential">CONFIDENTIAL</div>
-      <img src="Rat_and_Boa_logo_(2023).png" alt="Rat &amp; Boa Logo">
-      <h1>Dress Attribute Analysis</h1>
-      <h2>Direct Competitor Comparison &amp; Strategic Insights</h2>
-      <div style="color: #666;">February 2025</div>
+
+      <!-- Flex row: Rat & Boa logo + main title -->
+      <div class="header-top">
+        <img src="Rat_and_Boa_logo_(2023).png" alt="Rat & Boa Logo">
+        <h1>Dress Attribute Analysis</h1>
+      </div>
+
+      <!-- Subheading + date -->
+      <div class="header-subtitle">Direct Competitor Comparison &amp; Strategic Insights</div>
+      <div class="header-date">February 2025</div>
     </div>
 
     <!-- Executive Summary -->
@@ -278,7 +299,7 @@
     <!-- Strategic Opportunities Section -->
     <div class="section">
       <h2 class="section-title">Strategic Opportunities</h2>
-      <ol style="text-align: left; margin: auto; width: 90%;">
+      <ol style="margin: auto; width: 90%;">
         <li>
           <strong>Maintain Category Leadership</strong>
           <ul>
