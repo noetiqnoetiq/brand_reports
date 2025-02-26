@@ -33,10 +33,18 @@
 
       /* HEADER STYLING */
       .header {
-        text-align: center;        /* Center all header text/elements */
+        text-align: left;
         margin-bottom: 40px;
-        border-bottom: 3px solid #333;
+        border-bottom: 3px solid #333; /* Breaker line separating header from content */
         padding-bottom: 20px;
+      }
+      
+      .header h1 {
+        text-align: center; /* Main title centered */
+        font-size: 28px;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
 
       .confidential {
@@ -47,25 +55,12 @@
         margin-bottom: 10px;
       }
 
-      /* Flex container for the logo + main title in one row */
-      .header-top {
-        display: flex;
-        justify-content: center;   /* center horizontally */
-        align-items: center;      /* center vertically */
-        gap: 10px;                /* space between logo and text */
-        margin-bottom: 10px;      /* spacing before next line */
+      .logo {
+        margin-bottom: 10px;
       }
-
-      .header-top img {
+      
+      .logo img {
         width: 160px;
-        vertical-align: middle;
-      }
-
-      .header-top h1 {
-        font-size: 28px;
-        margin: 0;
-        text-transform: uppercase;
-        letter-spacing: 1px;
       }
 
       .header-subtitle {
@@ -78,7 +73,7 @@
       h2.section-title {
         font-size: 24px;
         color: #222;
-        border-bottom: 2px solid #666;
+        border-bottom: 2px solid #666; /* Breaker line for section titles */
         padding-bottom: 10px;
         margin-top: 40px;
         text-align: left;
@@ -86,7 +81,7 @@
 
       .section {
         margin-bottom: 30px;
-        text-align: left; /* Normal left alignment for content sections */
+        text-align: left; /* Content sections left aligned */
       }
 
       table {
@@ -124,7 +119,7 @@
         text-align: center;
         font-size: 12px;
         color: #666;
-        border-top: 1px solid #ddd;
+        border-top: 1px solid #ddd; /* Breaker line in footer */
         padding-top: 20px;
       }
 
@@ -147,21 +142,25 @@
     <div class="header">
       <!-- Top label (CONFIDENTIAL) -->
       <div class="confidential">CONFIDENTIAL</div>
-
-      <!-- Flex row: Rat & Boa logo + main title -->
-      <div class="header-top">
-        <img src="Rat_and_Boa_logo_(2023).png" alt="Rat & Boa Logo">
-        <h1>Dress Attributes Competitor Benchmarking</h1>
+      
+      <!-- Logo (aligned left) -->
+      <div class="logo">
+        <img src="Rat_and_Boa_logo_(2023).png" alt="Rat &amp; Boa Logo">
       </div>
+      
+      <!-- Main title (centered) -->
+      <h1>Dress Attributes Competitor Benchmarking</h1>
+      
+      <!-- Executive Summary Section -->
       <div class="summary-section">
         <h2 class="summary-title">Executive Summary</h2>
         <p class="summary-subtext">Key insights from the data:</p>
         
         <ul class="summary-list">
           <li><strong>Only objective attributes</strong> were included—no brand-language or ambiguous terms.</li>
-          <li><strong>Competitors in scope:</strong> 11 brands – Bec & Bridge, Camilla and Marc, Farm Rio, Frankie Shop, Ganni, House of CB, Me+Em, Meshki, Reformation, Rixo, Self Portrait.</li>
+          <li><strong>Competitors in scope:</strong> 11 brands – Bec &amp; Bridge, Camilla and Marc, Farm Rio, Frankie Shop, Ganni, House of CB, Me+Em, Meshki, Reformation, Rixo, Self Portrait.</li>
           <li><strong>Total SKUs considered:</strong> 3,407.</li>
-          <li><strong>Top 5 competitor attributes R&B does not mention:</strong> Cotton, Bra Friendly/Modesty, Strapless, Pleated.</li>
+          <li><strong>Top 5 competitor attributes R&amp;B does not mention:</strong> Cotton, Bra Friendly/Modesty, Strapless, Pleated.</li>
         </ul>
       
         <div class="important-note">
@@ -169,10 +168,11 @@
           <ul>
             <li>If a brand doesn’t mention an attribute, it doesn’t necessarily mean they don’t have it—it just wasn’t explicitly stated in the product description.</li>
             <li>When a brand <strong>includes</strong> an attribute in its product details, it is a clear confirmation that they offer it.</li>
-            <li>Comparing what brands highlight reveals their priorities, exposing messaging gaps and positioning differences. This helps R&B refine its product focus and improve tagging accuracy.</li>
+            <li>Comparing what brands highlight reveals their priorities, exposing messaging gaps and positioning differences. This helps R&amp;B refine its product focus and improve tagging accuracy.</li>
           </ul>
         </div>
       </div>
+      
       <!-- Subheading -->
       <div class="header-subtitle">Market Positioning &amp; Competitive Advantage | February 2025</div>
     </div>
@@ -338,7 +338,7 @@
 
     <!-- Footer -->
     <div class="footer">
-    CONFIDENTIAL & PROPRIETARY | © 2025 Noetiq. All Rights Reserved. | For Rat & Boa Internal Use Only.
+      CONFIDENTIAL &amp; PROPRIETARY | © 2025 Noetiq. All Rights Reserved. | For Rat &amp; Boa Internal Use Only.
     </div>
   </body>
 </html>
