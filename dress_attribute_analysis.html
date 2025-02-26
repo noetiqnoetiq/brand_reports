@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <title>Rat & Boa Strategic Analysis</title>
     <style>
       /* Watermark (Bottom-Right) */
       .watermark {
@@ -33,10 +34,10 @@
         margin: 0 auto;
         padding: 40px;
         color: #333;
+        text-align: center;
       }
 
       .header {
-        text-align: center;
         margin-bottom: 40px;
         border-bottom: 3px solid #333;
         padding-bottom: 20px;
@@ -51,36 +52,50 @@
       }
 
       .header h1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
         font-size: 28px;
         margin: 0;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
 
-      h2 {
+      .header h2 {
+        font-size: 20px;
+        margin: 10px 0;
+        color: #666;
+      }
+
+      h2.section-title {
         font-size: 24px;
         color: #222;
         border-bottom: 2px solid #666;
         padding-bottom: 10px;
         margin-top: 40px;
-      }
-
-      h3 {
-        font-size: 20px;
-        color: #444;
-        margin-top: 25px;
+        text-align: center;
       }
 
       .section {
         margin-bottom: 30px;
       }
 
+      table {
+        width: 90%;
+        margin: auto;
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
       ul {
-        padding-left: 20px;
+        text-align: left;
+        display: inline-block;
       }
 
       li {
@@ -91,12 +106,9 @@
         background-color: #f8f8f8;
         border-left: 4px solid #cc0000;
         padding: 15px;
-        margin: 20px 0;
-      }
-
-      .data-point {
-        font-weight: bold;
-        color: #222;
+        margin: 20px auto;
+        width: 90%;
+        text-align: left;
       }
 
       .footer {
@@ -107,172 +119,138 @@
         border-top: 1px solid #ddd;
         padding-top: 20px;
       }
-
-      .chart-container {
-        background: #f8f8f8;
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 8px;
-      }
-
-      .chart-title {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 15px;
+      
+      /* Ensure paragraphs and headings remain centered */
+      p, h3 {
         text-align: center;
-        color: #444;
       }
-
-      .bar-chart {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      .bar-row {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .bar-label {
-        min-width: 180px;
-        text-align: right;
-        font-size: 14px;
-      }
-
-      .bar-container {
-        flex-grow: 1;
-        height: 30px;
-        background: #eee;
-        border-radius: 4px;
-        position: relative;
-      }
-
-      .bar {
-        height: 100%;
-        background: #444;
-        border-radius: 4px;
-        position: relative;
-      }
-
-      .bar-value {
-        position: absolute;
-        right: 8px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 14px;
-        white-space: nowrap;
-        color: #fff;
-      }
-
-      .competitor-note {
-        background-color: #f8f8f8;
-        padding: 15px;
-        margin: 20px 0;
-        border-radius: 4px;
+      
+      /* Optional: Left-align bullet content inside list items */
+      ul li {
+        text-align: left;
       }
     </style>
   </head>
   <body>
-
     <!-- Watermark (Bottom-Right) -->
     <div class="watermark">
       <img src="Noetiq Black.png" alt="Noetiq">
-      <div class="watermark-text" style="text-align: center;">
+      <div class="watermark-text">
         <div>Fashion Strategy</div>
         <div>Market Insights</div>
       </div>
     </div>
 
-    <!-- Header with Rat & Boa logo -->
+    <!-- Header -->
     <div class="header">
       <div class="confidential">CONFIDENTIAL</div>
-      <h1>
-        <img 
-          src="Rat_and_Boa_logo_(2023).png" 
-          alt="Rat & Boa Logo" 
-          style="vertical-align: middle; width: 160px; margin-right: 10px;">
-        STRATEGIC ANALYSIS DOSSIER (DRESSES)
-      </h1>
-      <div style="margin-top: 10px; color: #666">February 2025</div>
+      <h1>Rat &amp; Boa Strategic Analysis</h1>
+      <h2>Market Positioning &amp; Competitive Advantage | February 2025</h2>
     </div>
 
-    <!-- SECTION 1: Market Position -->
+    <!-- Executive Summary -->
     <div class="section">
-      <h2>Market Positioning & Competitive Advantage</h2>
-      <h3>Market Position: Category Leadership & Key Strengths</h3>
-      <ul>
-        <li>Rat &amp; Boa co-leads slip dress market at <span class="data-point">16.1%</span> share (tied with Meshki)</li>
-        <li>R&amp;B mentions slip dresses in <span class="data-point">29.9%</span> of product descriptions vs. <span class="data-point">3.3%</span> competitor average</li>
-        <li>Significant advantage in all printed designs (<span class="data-point">49.5%</span> vs. <span class="data-point">7.8%</span> competitor average)</li>
-      </ul>
+      <h2 class="section-title">Executive Summary</h2>
       <p>
-        Within prints category: Animal (<span class="data-point">7.5%</span>), Abstract (<span class="data-point">5.6%</span>), Floral (<span class="data-point">10.3%</span>), Other prints (<span class="data-point">26.1%</span>).
-        Some competitors have higher specific print usage (e.g., Ganni's animal prints at 20.5%), but within smaller overall print offerings.
+        Quick highlights from the data. For further details, please refer to the subsequent sheets.<br/>
+        <strong>Note:</strong> When a brand includes an attribute, it confirms they offer it.
       </p>
+      <h3>Summary Points</h3>
+      <ul>
+        <li>We included only objective attributes. No brand-language or ambiguous terms.</li>
+        <li>Rat &amp; Boa references 51 distinct attributes.</li>
+        <li>
+          Competitors in scope: 11 brand(s): becandbridge, camilla and marc, farm rio, frankie shop, ganni, house of cb, meandem, meshki, reformation, rixo, self_portrait.
+        </li>
+        <li>Total SKUs considered: 3407.</li>
+        <li>
+          Top 5 competitor attributes R&amp;B does not mention: Cotton, Strapless, Sleeveless, Bodycon, Pleated.
+        </li>
+      </ul>
+      <div class="important-note">
+        <strong>IMPORTANT:</strong><br/>
+        - If a brand doesn’t mention an attribute, it doesn’t necessarily mean they don’t have it—it just means that it was not called out in the product description.<br/>
+        - When a brand includes an attribute in its product details, it is a clear confirmation that they offer it.<br/>
+        - Comparing what brands highlight shows us their priorities and reveals gaps in messaging or differences in positioning, helping Rat &amp; Boa to target white space and identify tagging discrepancies.
+      </div>
     </div>
 
-    <!-- SECTION 2: R&amp;B Attribute Dominance -->
+    <!-- Market Position Section -->
     <div class="section">
-      <h2>R&amp;B Attribute Dominance</h2>
-      <table border="1" style="width: 100%; border-collapse: collapse;">
+      <h2 class="section-title">Market Position</h2>
+      <h3>Category Leadership &amp; Key Strengths</h3>
+      <ul>
+        <li>Rat &amp; Boa co-leads slip dress market at 16.1% share (tied with Meshki)</li>
+        <li>R&amp;B mentions slip dresses in 29.9% of product descriptions vs. 3.3% competitor average</li>
+        <li>Significant advantage in all printed designs (49.5% vs. 7.8% competitor average)
+          <ul>
+            <li>Within prints category: Animal (7.5%), Abstract (5.6%), Floral (10.3%), Other prints (26.1%)</li>
+            <li>Some competitors have higher specific print usage (e.g., Ganni's animal prints at 20.5%), but within smaller overall print offerings</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- R&B Attribute Dominance Section -->
+    <div class="section">
+      <h2 class="section-title">R&amp;B Attribute Dominance</h2>
+      <table>
         <thead>
           <tr>
             <th>Attribute</th>
-            <th>R&amp;B Usage</th>
-            <th>Competitor Avg</th>
-            <th>Top Competitors</th>
+            <th>R&amp;B Usage<br/>(% of R&amp;B collection)</th>
+            <th>Competitor Avg<br/>(% of their collections)</th>
+            <th>Top Market Competitors<br/>(% of total dress market)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Printed (All Types)</td>
+            <td><strong>Printed (All Types)</strong></td>
             <td>49.5%</td>
             <td>7.8%</td>
-            <td>Farm Rio (24.9%), Rixo (29.1%)</td>
+            <td>Farm Rio (7.3%), House of CB (7.3%), Rixo (3.6%)</td>
           </tr>
           <tr>
-            <td>Slip Dress</td>
+            <td><strong>Slip Dress</strong></td>
             <td>29.9%</td>
             <td>3.3%</td>
-            <td>Frankie Shop (44.4%), Rixo (20.5%)</td>
+            <td>Meshki (3.1%), Rixo (2.5%), Frankie Shop (2.1%)</td>
           </tr>
           <tr>
-            <td>Cowl Neck</td>
+            <td><strong>Cowl Neck</strong></td>
             <td>21.5%</td>
             <td>3.2%</td>
-            <td>Reformation (9.6%), Camilla &amp; Marc (8.8%)</td>
+            <td>Meshki (4.1%), Becandbridge (3.7%), Reformation (1.0%)</td>
           </tr>
           <tr>
-            <td>Lace</td>
+            <td><strong>Lace</strong> <em>*</em></td>
             <td>23.4%</td>
             <td>15.6%</td>
-            <td>House of CB (32.2%), Self Portrait (25.5%)</td>
+            <td>House of CB (19.9%), Self Portrait (13.0%), Meshki (8.0%)</td>
           </tr>
           <tr>
-            <td>Animal Print</td>
+            <td><strong>Animal Print</strong></td>
             <td>7.5%</td>
             <td>0.6%</td>
-            <td>Ganni (20.5%)*, Rixo (2.6%)</td>
+            <td>Ganni (0.8%), Farm Rio (0.4%), Rixo (0.3%)</td>
           </tr>
           <tr>
-            <td>Abstract Print</td>
+            <td><strong>Abstract Print</strong></td>
             <td>5.6%</td>
             <td>0.1%</td>
-            <td>House of CB (0.2%), Meshki (0.1%)</td>
+            <td>House of CB (0.1%), Meshki (0.1%)</td>
           </tr>
         </tbody>
       </table>
-      <p>
-        *Note: While Ganni has higher animal print percentage, this represents a significant portion of their smaller overall print category, whereas R&amp;B offers a more diverse print portfolio.
+      <p style="font-size: 14px; margin-top: 10px;">
+        <em>* For R&amp;B, lace is typically used as an accent/detail rather than as the primary fabric, unlike some competitors who feature all-lace garments.</em>
       </p>
     </div>
 
-    <!-- SECTION 3: Modesty Feature Comparison -->
+    <!-- Modesty Feature Comparison Section -->
     <div class="section">
-      <h2>Modesty Feature Comparison</h2>
-      <table border="1" style="width: 100%; border-collapse: collapse;">
+      <h2 class="section-title">Modesty Feature Comparison</h2>
+      <table>
         <thead>
           <tr>
             <th>Brand</th>
@@ -282,64 +260,75 @@
         </thead>
         <tbody>
           <tr>
-            <td>Rat &amp; Boa</td>
+            <td><strong>Rat &amp; Boa</strong></td>
             <td>Emphasizes sensuality</td>
             <td>More sheer fabrics, less coverage, fewer bra-friendly designs</td>
           </tr>
           <tr>
-            <td>Rixo</td>
+            <td><strong>Rixo</strong></td>
             <td>"Closed-back" labeling (65%)</td>
             <td>Non-sheer fabrics, modest cuts with good coverage</td>
           </tr>
           <tr>
-            <td>Bec &amp; Bridge</td>
+            <td><strong>Bec &amp; Bridge</strong></td>
             <td>"Bra-friendly" filter (12.5%)</td>
             <td>Structured designs, supportive elements</td>
           </tr>
           <tr>
-            <td>Me+Em</td>
+            <td><strong>Me+Em</strong></td>
             <td>Dedicated "modest" filter</td>
             <td>Non-sheer fabrics, higher necklines, longer hemlines</td>
           </tr>
           <tr>
-            <td>Self Portrait</td>
+            <td><strong>Self Portrait</strong></td>
             <td>High-fashion modest aesthetic</td>
             <td>Heavy fabrics, structured silhouettes, embellishments</td>
           </tr>
         </tbody>
       </table>
-      <p>
+      <p style="font-size: 14px; margin-top: 10px;">
         <strong>Market Context:</strong> Most competitors generally offer more modest designs with greater coverage, less sheerness, and more naturally bra-friendly styles compared to Rat &amp; Boa—even when not explicitly labeled as such.
       </p>
     </div>
 
-    <!-- SECTION 4: Strategic Opportunities -->
+    <!-- Strategic Opportunities Section -->
     <div class="section">
-      <h2>Strategic Opportunities</h2>
-      <h3>Maintain Category Leadership</h3>
-      <ul>
-        <li>Continue emphasis on slip dresses while enhancing printed and animal print offerings</li>
-        <li>Leverage unique abstract pattern dominance for differentiation</li>
-      </ul>
-      <h3>Balanced Product Messaging</h3>
-      <ul>
-        <li>Introduce subtle "bra-friendly" and "lined" descriptors for ~25% of collection</li>
-        <li>Highlight premium materials more consistently (silk, georgette)</li>
-      </ul>
-      <h3>Differentiation Strategy</h3>
-      <ul>
-        <li>Preserve core sensual aesthetic while strategically expanding modest options</li>
-        <li>Target specific occasions where modesty is valued without compromising brand DNA</li>
-      </ul>
-      <p>
-        <strong>Note:</strong> When attributes appear in product descriptions, it confirms their presence. However, absence from descriptions does not necessarily mean the feature is missing—only that it wasn't highlighted. High usage percentages likely underrepresent actual prevalence; confidence is highest for objective attributes (e.g., dress length, fabric composition) while more subjective features like sheerness may be inconsistently mentioned.
+      <h2 class="section-title">Strategic Opportunities</h2>
+      <ol style="text-align: left; display: inline-block;">
+        <li>
+          <strong>Maintain Category Leadership</strong>
+          <ul>
+            <li>Continue emphasis on slip dresses while enhancing printed and animal print offerings</li>
+            <li>Leverage unique abstract pattern dominance for differentiation</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Balanced Product Messaging</strong>
+          <ul>
+            <li>Introduce subtle "bra-friendly" and "lined" descriptors for ~25% of collection</li>
+            <li>Highlight premium materials more consistently (silk, georgette)</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Differentiation Strategy</strong>
+          <ul>
+            <li>Preserve core sensual aesthetic while strategically expanding modest options</li>
+            <li>Target specific occasions where modesty is valued without compromising brand DNA</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="section">
+      <p style="font-size: 14px; text-align: center; max-width: 800px; margin: auto;">
+        <em>Note: When attributes appear in product descriptions, it confirms their presence in the product. However, absence from descriptions does not necessarily mean the feature is missing—only that it wasn't highlighted in marketing materials. High usage percentages likely underrepresent actual prevalence, as some instances may not be mentioned. Confidence is highest for objective attributes like dress length (midi, maxi) and fabric composition (cotton, silk), while more subjective features like sheerness may be inconsistently mentioned across brands.</em>
       </p>
     </div>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <div class="footer">
-      CONFIDENTIAL &amp; PROPRIETARY | RAT &amp; BOA INTERNAL USE ONLY | © 2025
+      CONFIDENTIAL &amp; PROPRIETARY | RAT &amp; BOA INTERNAL USE ONLY | &copy; 2025
     </div>
-
   </body>
 </html>
