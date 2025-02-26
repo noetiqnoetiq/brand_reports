@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Dress Attributes Competitor Benchmarking</title>
+    <meta charset="UTF-8">
+    <title>Strategic Analysis Dossier (Dresses)</title>
     <style>
-      /* Watermark (Bottom-Right) */
+      /* BASIC BODY STYLES */
+      body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px;
+        color: #333;
+      }
+
+      /* WATERMARK (BOTTOM-RIGHT) */
       .watermark {
         position: fixed;
         bottom: 20px;
@@ -16,122 +26,101 @@
         z-index: 1000;
       }
       .watermark img {
-        /* ~20% larger than 80px */
         width: 96px;
         height: auto;
         margin-bottom: 5px;
       }
-      .logo {
-        text-align: center; /* Centers the logo */
-        margin-bottom: 10px;
-      }
-      
-      .logo img {
-        width: 160px;
-        display: block;
-        margin: 0 auto; /* Ensures the image is centered */
-      }
-      body {
-        font-family: 'Arial', sans-serif;
-        line-height: 1.6;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 40px;
-        color: #333;
-      }
 
-      /* HEADER STYLING */
-      .header {
-        text-align: left;
-        margin-bottom: 40px;
-        border-bottom: 3px solid #333; /* Breaker line separating header from content */
-        padding-bottom: 20px;
-      }
-      
-      .header h1 {
-        text-align: center; /* Main title centered */
-        font-size: 28px;
-        margin: 0;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-
+      /* "CONFIDENTIAL" - CENTERED, RED TEXT */
       .confidential {
+        text-align: center;
         color: #cc0000;
         font-weight: bold;
         text-transform: uppercase;
-        letter-spacing: 2px;
         margin-bottom: 10px;
       }
 
-      .logo {
-        margin-bottom: 10px;
+      /* HEADER ROW: RAT & BOA + TITLE SIDE BY SIDE */
+      .header-top {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        margin-bottom: 5px;
       }
-      
-      .logo img {
-        width: 160px;
-      }
-
-      .header-subtitle {
+      .header-top .brand {
+        font-weight: bold;
         font-size: 20px;
-        margin: 10px 0 5px 0;
-        color: #666;
+      }
+      .header-top .title {
+        font-weight: bold;
+        font-size: 20px;
       }
 
-      /* SECTION TITLES */
+      /* DATE CENTERED BELOW HEADER */
+      .date {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      /* HORIZONTAL LINE UNDER HEADER */
+      hr {
+        border: none;
+        border-top: 1px solid #333;
+        margin-bottom: 20px;
+      }
+
+      /* SECTION HEADINGS */
       h2.section-title {
-        font-size: 24px;
-        color: #222;
-        border-bottom: 2px solid #666; /* Breaker line for section titles */
-        padding-bottom: 10px;
-        margin-top: 40px;
-        text-align: left;
+        font-size: 20px;
+        margin: 30px 0 10px 0;
+        font-weight: bold;
       }
 
       .section {
         margin-bottom: 30px;
-        text-align: left; /* Content sections left aligned */
+        text-align: left; /* Keep body text left-aligned */
       }
 
+      /* TABLES */
       table {
         width: 90%;
         margin: auto;
         border-collapse: collapse;
         text-align: center;
       }
-
       th, td {
         border: 1px solid #ddd;
         padding: 8px;
       }
-
       th {
         background-color: #f2f2f2;
       }
-
-      /* Markdown-style tables with left alignment for first column */
+      /* Left-align first column in tables */
       table thead th:first-child,
       table tbody td:first-child {
         text-align: left;
       }
 
+      /* LISTS */
       ul {
         padding-left: 20px;
       }
-
       li {
         margin-bottom: 10px;
       }
 
+      /* FOOTER */
       .footer {
         margin-top: 50px;
         text-align: center;
         font-size: 12px;
         color: #666;
-        border-top: 1px solid #ddd; /* Breaker line in footer */
+        border-top: 1px solid #ddd;
         padding-top: 20px;
       }
 
+      /* ITALICIZED NOTE */
       .note {
         font-size: 14px;
         max-width: 800px;
@@ -142,53 +131,41 @@
   </head>
   <body>
 
-    <!-- Watermark (Bottom-Right) -->
+    <!-- WATERMARK (OPTIONAL) -->
     <div class="watermark">
       <img src="Noetiq Black.png" alt="Noetiq">
     </div>
 
-    <!-- HEADER -->
-    <div class="header">
-      <!-- Top label (CONFIDENTIAL) -->
-      <div class="confidential">CONFIDENTIAL</div>
-      
-      <!-- Centered Logo -->
-      <div class="logo">
-        <img src="Rat_and_Boa_logo_(2023).png" alt="Rat & Boa Logo">
-      </div>
-      
-      <!-- Main title (centered) -->
-      <h1>Dress Attributes Competitor Benchmarking</h1>
-      
-      <!-- Executive Summary Section -->
-      <div class="summary-section">
-        <h2 class="summary-title">Executive Summary</h2>
-        <p class="summary-subtext">Key insights from the data:</p>
-        
-        <ul class="summary-list">
-          <li><strong>Only objective attributes</strong> were included—no brand-language or ambiguous terms.</li>
-          <li><strong>Competitors in scope:</strong> 11 brands – Bec &amp; Bridge, Camilla and Marc, Farm Rio, Frankie Shop, Ganni, House of CB, Me+Em, Meshki, Reformation, Rixo, Self Portrait.</li>
-          <li><strong>Total SKUs considered:</strong> 3,407.</li>
-          <li><strong>Top 5 competitor attributes R&amp;B does not mention:</strong> Cotton, Bra Friendly/Modesty, Strapless, Pleated.</li>
-        </ul>
-      
-        <div class="important-note">
-          <h3 class="important-title">Important Considerations</h3>
-          <ul>
-            <li>If a brand doesn’t mention an attribute, it doesn’t necessarily mean they don’t have it—it just wasn’t explicitly stated in the product description.</li>
-            <li>When a brand <strong>includes</strong> an attribute in its product details, it is a clear confirmation that they offer it.</li>
-            <li>Comparing what brands highlight reveals their priorities, exposing messaging gaps and positioning differences. This helps R&amp;B refine its product focus and improve tagging accuracy.</li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Subheading -->
-      <div class="header-subtitle">Market Positioning &amp; Competitive Advantage | February 2025</div>
+    <!-- TOP HEADER SECTION -->
+    <div class="confidential">CONFIDENTIAL</div>
+    <div class="header-top">
+      <div class="brand">RAT &amp; BOA</div>
+      <div class="title">STRATEGIC ANALYSIS DOSSIER (DRESSES)</div>
+    </div>
+    <div class="date">February 2025</div>
+    <hr />
+
+    <!-- SECTION 1: OPENING SUMMARY -->
+    <h2 class="section-title">1. Opening Summary</h2>
+    <div class="section">
+      <p><strong>Key insights from the data:</strong></p>
+      <ul>
+        <li><strong>Only objective attributes</strong> were included—no brand-language or ambiguous terms.</li>
+        <li><strong>Competitors in scope:</strong> 11 brands – Bec &amp; Bridge, Camilla and Marc, Farm Rio, Frankie Shop, Ganni, House of CB, Me+Em, Meshki, Reformation, Rixo, Self Portrait.</li>
+        <li><strong>Total SKUs considered:</strong> 3,407.</li>
+        <li><strong>Top 5 competitor attributes R&amp;B does not mention:</strong> Cotton, Bra Friendly/Modesty, Strapless, Pleated.</li>
+      </ul>
+      <p><strong>Important Considerations:</strong></p>
+      <ul>
+        <li>If a brand doesn’t mention an attribute, it doesn’t necessarily mean they don’t have it—it just wasn’t explicitly stated in the product description.</li>
+        <li>When a brand <strong>includes</strong> an attribute in its product details, it is a clear confirmation that they offer it.</li>
+        <li>Comparing what brands highlight reveals their priorities, exposing messaging gaps and positioning differences. This helps R&amp;B refine its product focus and improve tagging accuracy.</li>
+      </ul>
     </div>
 
-    <!-- SECTION: Category Leadership & Key Strengths -->
+    <!-- SECTION 2: CATEGORY LEADERSHIP & KEY STRENGTHS -->
+    <h2 class="section-title">2. Category Leadership &amp; Key Strengths</h2>
     <div class="section">
-      <h2 class="section-title">Category Leadership &amp; Key Strengths</h2>
       <p><em>Market position and distinctive attributes</em></p>
       <ul>
         <li>Rat &amp; Boa co-leads slip dress market at 16.1% share (tied with Meshki)</li>
@@ -203,9 +180,9 @@
       </ul>
     </div>
 
-    <!-- SECTION: R&B Attribute Dominance -->
+    <!-- SECTION 3: R&B ATTRIBUTE DOMINANCE -->
+    <h2 class="section-title">3. R&amp;B Attribute Dominance</h2>
     <div class="section">
-      <h2 class="section-title">R&amp;B Attribute Dominance</h2>
       <p><em>Percentage of each brand's collection featuring these attributes</em></p>
       <table>
         <thead>
@@ -260,9 +237,9 @@
       </p>
     </div>
 
-    <!-- SECTION: Modesty Feature Comparison -->
+    <!-- SECTION 4: MODESTY FEATURE COMPARISON -->
+    <h2 class="section-title">4. Modesty Feature Comparison</h2>
     <div class="section">
-      <h2 class="section-title">Modesty Feature Comparison</h2>
       <p><em>How brands approach coverage and undergarment compatibility</em></p>
       <table>
         <thead>
@@ -305,9 +282,9 @@
       </p>
     </div>
 
-    <!-- SECTION: Strategic Opportunities -->
+    <!-- SECTION 5: STRATEGIC OPPORTUNITIES -->
+    <h2 class="section-title">5. Strategic Opportunities</h2>
     <div class="section">
-      <h2 class="section-title">Strategic Opportunities</h2>
       <p><em>Recommendations to maintain brand DNA while capturing new market segments</em></p>
       <ol style="margin: auto; width: 90%;">
         <li>
@@ -335,7 +312,7 @@
       </ol>
     </div>
 
-    <!-- Disclaimer / Note -->
+    <!-- DISCLAIMER / NOTE -->
     <p class="note">
       Note: When attributes appear in product descriptions, it confirms their presence in the product. 
       However, absence from descriptions does not necessarily mean the feature is missing—only that 
@@ -345,9 +322,10 @@
       subjective features like sheerness may be inconsistently mentioned across brands.
     </p>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <div class="footer">
       CONFIDENTIAL &amp; PROPRIETARY | © 2025 Noetiq. All Rights Reserved. | For Rat &amp; Boa Internal Use Only.
     </div>
+
   </body>
 </html>
