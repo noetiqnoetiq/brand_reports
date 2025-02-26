@@ -1,1 +1,345 @@
-This contains dress attribute analysis
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      /* Watermark (Bottom-Right) */
+      .watermark {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.8;
+        z-index: 1000;
+      }
+      .watermark img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 5px;
+      }
+      .watermark-text {
+        font-size: 12px;
+        color: #666;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+      }
+
+      body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px;
+        color: #333;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+        border-bottom: 3px solid #333;
+        padding-bottom: 20px;
+      }
+
+      .confidential {
+        color: #cc0000;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+      }
+
+      .header h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 28px;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      h2 {
+        font-size: 24px;
+        color: #222;
+        border-bottom: 2px solid #666;
+        padding-bottom: 10px;
+        margin-top: 40px;
+      }
+
+      h3 {
+        font-size: 20px;
+        color: #444;
+        margin-top: 25px;
+      }
+
+      .section {
+        margin-bottom: 30px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .important-note {
+        background-color: #f8f8f8;
+        border-left: 4px solid #cc0000;
+        padding: 15px;
+        margin: 20px 0;
+      }
+
+      .data-point {
+        font-weight: bold;
+        color: #222;
+      }
+
+      .footer {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 12px;
+        color: #666;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+      }
+
+      .chart-container {
+        background: #f8f8f8;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+      }
+
+      .chart-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #444;
+      }
+
+      .bar-chart {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .bar-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .bar-label {
+        min-width: 180px;
+        text-align: right;
+        font-size: 14px;
+      }
+
+      .bar-container {
+        flex-grow: 1;
+        height: 30px;
+        background: #eee;
+        border-radius: 4px;
+        position: relative;
+      }
+
+      .bar {
+        height: 100%;
+        background: #444;
+        border-radius: 4px;
+        position: relative;
+      }
+
+      .bar-value {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        white-space: nowrap;
+        color: #fff;
+      }
+
+      .competitor-note {
+        background-color: #f8f8f8;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Watermark (Bottom-Right) -->
+    <div class="watermark">
+      <img src="Noetiq Black.png" alt="Noetiq">
+      <div class="watermark-text" style="text-align: center;">
+        <div>Fashion Strategy</div>
+        <div>Market Insights</div>
+      </div>
+    </div>
+
+    <!-- Header with Rat & Boa logo -->
+    <div class="header">
+      <div class="confidential">CONFIDENTIAL</div>
+      <h1>
+        <img 
+          src="Rat_and_Boa_logo_(2023).png" 
+          alt="Rat & Boa Logo" 
+          style="vertical-align: middle; width: 160px; margin-right: 10px;">
+        STRATEGIC ANALYSIS DOSSIER (DRESSES)
+      </h1>
+      <div style="margin-top: 10px; color: #666">February 2025</div>
+    </div>
+
+    <!-- SECTION 1: Market Position -->
+    <div class="section">
+      <h2>Market Positioning & Competitive Advantage</h2>
+      <h3>Market Position: Category Leadership & Key Strengths</h3>
+      <ul>
+        <li>Rat &amp; Boa co-leads slip dress market at <span class="data-point">16.1%</span> share (tied with Meshki)</li>
+        <li>R&amp;B mentions slip dresses in <span class="data-point">29.9%</span> of product descriptions vs. <span class="data-point">3.3%</span> competitor average</li>
+        <li>Significant advantage in all printed designs (<span class="data-point">49.5%</span> vs. <span class="data-point">7.8%</span> competitor average)</li>
+      </ul>
+      <p>
+        Within prints category: Animal (<span class="data-point">7.5%</span>), Abstract (<span class="data-point">5.6%</span>), Floral (<span class="data-point">10.3%</span>), Other prints (<span class="data-point">26.1%</span>).
+        Some competitors have higher specific print usage (e.g., Ganni's animal prints at 20.5%), but within smaller overall print offerings.
+      </p>
+    </div>
+
+    <!-- SECTION 2: R&amp;B Attribute Dominance -->
+    <div class="section">
+      <h2>R&amp;B Attribute Dominance</h2>
+      <table border="1" style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>R&amp;B Usage</th>
+            <th>Competitor Avg</th>
+            <th>Top Competitors</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Printed (All Types)</td>
+            <td>49.5%</td>
+            <td>7.8%</td>
+            <td>Farm Rio (24.9%), Rixo (29.1%)</td>
+          </tr>
+          <tr>
+            <td>Slip Dress</td>
+            <td>29.9%</td>
+            <td>3.3%</td>
+            <td>Frankie Shop (44.4%), Rixo (20.5%)</td>
+          </tr>
+          <tr>
+            <td>Cowl Neck</td>
+            <td>21.5%</td>
+            <td>3.2%</td>
+            <td>Reformation (9.6%), Camilla &amp; Marc (8.8%)</td>
+          </tr>
+          <tr>
+            <td>Lace</td>
+            <td>23.4%</td>
+            <td>15.6%</td>
+            <td>House of CB (32.2%), Self Portrait (25.5%)</td>
+          </tr>
+          <tr>
+            <td>Animal Print</td>
+            <td>7.5%</td>
+            <td>0.6%</td>
+            <td>Ganni (20.5%)*, Rixo (2.6%)</td>
+          </tr>
+          <tr>
+            <td>Abstract Print</td>
+            <td>5.6%</td>
+            <td>0.1%</td>
+            <td>House of CB (0.2%), Meshki (0.1%)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        *Note: While Ganni has higher animal print percentage, this represents a significant portion of their smaller overall print category, whereas R&amp;B offers a more diverse print portfolio.
+      </p>
+    </div>
+
+    <!-- SECTION 3: Modesty Feature Comparison -->
+    <div class="section">
+      <h2>Modesty Feature Comparison</h2>
+      <table border="1" style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th>Approach</th>
+            <th>Key Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rat &amp; Boa</td>
+            <td>Emphasizes sensuality</td>
+            <td>More sheer fabrics, less coverage, fewer bra-friendly designs</td>
+          </tr>
+          <tr>
+            <td>Rixo</td>
+            <td>"Closed-back" labeling (65%)</td>
+            <td>Non-sheer fabrics, modest cuts with good coverage</td>
+          </tr>
+          <tr>
+            <td>Bec &amp; Bridge</td>
+            <td>"Bra-friendly" filter (12.5%)</td>
+            <td>Structured designs, supportive elements</td>
+          </tr>
+          <tr>
+            <td>Me+Em</td>
+            <td>Dedicated "modest" filter</td>
+            <td>Non-sheer fabrics, higher necklines, longer hemlines</td>
+          </tr>
+          <tr>
+            <td>Self Portrait</td>
+            <td>High-fashion modest aesthetic</td>
+            <td>Heavy fabrics, structured silhouettes, embellishments</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <strong>Market Context:</strong> Most competitors generally offer more modest designs with greater coverage, less sheerness, and more naturally bra-friendly styles compared to Rat &amp; Boa—even when not explicitly labeled as such.
+      </p>
+    </div>
+
+    <!-- SECTION 4: Strategic Opportunities -->
+    <div class="section">
+      <h2>Strategic Opportunities</h2>
+      <h3>Maintain Category Leadership</h3>
+      <ul>
+        <li>Continue emphasis on slip dresses while enhancing printed and animal print offerings</li>
+        <li>Leverage unique abstract pattern dominance for differentiation</li>
+      </ul>
+      <h3>Balanced Product Messaging</h3>
+      <ul>
+        <li>Introduce subtle "bra-friendly" and "lined" descriptors for ~25% of collection</li>
+        <li>Highlight premium materials more consistently (silk, georgette)</li>
+      </ul>
+      <h3>Differentiation Strategy</h3>
+      <ul>
+        <li>Preserve core sensual aesthetic while strategically expanding modest options</li>
+        <li>Target specific occasions where modesty is valued without compromising brand DNA</li>
+      </ul>
+      <p>
+        <strong>Note:</strong> When attributes appear in product descriptions, it confirms their presence. However, absence from descriptions does not necessarily mean the feature is missing—only that it wasn't highlighted. High usage percentages likely underrepresent actual prevalence; confidence is highest for objective attributes (e.g., dress length, fabric composition) while more subjective features like sheerness may be inconsistently mentioned.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      CONFIDENTIAL &amp; PROPRIETARY | RAT &amp; BOA INTERNAL USE ONLY | © 2025
+    </div>
+
+  </body>
+</html>
