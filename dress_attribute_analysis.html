@@ -2,19 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Strategic Analysis Dossier (Dresses)</title>
+    <title>Your Document Title</title>
     <style>
-      /* BASIC BODY STYLES */
-      body {
-        font-family: 'Arial', sans-serif;
-        line-height: 1.6;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 40px;
-        color: #333;
-      }
-
-      /* WATERMARK (BOTTOM-RIGHT) */
+      /* Watermark (Bottom-Right) - Matched from reference */
       .watermark {
         position: fixed;
         bottom: 20px;
@@ -26,306 +16,60 @@
         z-index: 1000;
       }
       .watermark img {
-        width: 96px;
+        width: 240px; /* Set to match the first document's 240px width */
         height: auto;
         margin-bottom: 5px;
       }
-
-      /* "CONFIDENTIAL" - CENTERED, RED TEXT */
-      .confidential {
-        text-align: center;
-        color: #cc0000;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-      }
-
-      /* HEADER ROW: RAT & BOA + TITLE SIDE BY SIDE */
-      .header-top {
-        display: flex;
-        align-items: baseline;
-        gap: 10px;
-        margin-bottom: 5px;
-      }
-      .header-top .brand {
-        font-weight: bold;
-        font-size: 20px;
-      }
-      .header-top .title {
-        font-weight: bold;
-        font-size: 20px;
-      }
-
-      /* DATE CENTERED BELOW HEADER */
-      .date {
-        text-align: center;
-        font-size: 14px;
-        margin-bottom: 20px;
-      }
-
-      /* HORIZONTAL LINE UNDER HEADER */
-      hr {
-        border: none;
-        border-top: 1px solid #333;
-        margin-bottom: 20px;
-      }
-
-      /* SECTION HEADINGS */
-      h2.section-title {
-        font-size: 20px;
-        margin: 30px 0 10px 0;
-        font-weight: bold;
-      }
-
-      .section {
-        margin-bottom: 30px;
-        text-align: left; /* Keep body text left-aligned */
-      }
-
-      /* TABLES */
-      table {
-        width: 90%;
-        margin: auto;
-        border-collapse: collapse;
-        text-align: center;
-      }
-      th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-      }
-      th {
-        background-color: #f2f2f2;
-      }
-      /* Left-align first column in tables */
-      table thead th:first-child,
-      table tbody td:first-child {
-        text-align: left;
-      }
-
-      /* LISTS */
-      ul {
-        padding-left: 20px;
-      }
-      li {
-        margin-bottom: 10px;
-      }
-
-      /* FOOTER */
-      .footer {
-        margin-top: 50px;
-        text-align: center;
+      .watermark-text {
         font-size: 12px;
         color: #666;
-        border-top: 1px solid #ddd;
-        padding-top: 20px;
+        text-transform: lowercase;
+        letter-spacing: 1px;
       }
 
-      /* ITALICIZED NOTE */
-      .note {
-        font-size: 14px;
-        max-width: 800px;
-        margin: 20px auto;
-        font-style: italic;
+      /* Protective styling to prevent selection - from reference */
+      body {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
+
+      /* Your existing styles would go here */
     </style>
+    <script>
+      // Disable right-click - from reference
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        alert('Right-clicking is disabled on this confidential document.');
+        return false;
+      });
+      
+      // Disable keyboard shortcuts that could be used to copy content - from reference
+      document.addEventListener('keydown', function(e) {
+        // Disable Ctrl+C, Ctrl+P, Ctrl+S, Ctrl+Shift+I
+        if (
+          (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 80 || e.keyCode === 83)) ||
+          (e.ctrlKey && e.shiftKey && e.keyCode === 73)
+        ) {
+          e.preventDefault();
+          return false;
+        }
+      });
+      
+      // Additional security message on page load - from reference
+      window.addEventListener('load', function() {
+        console.log('%cWARNING!', 'color: red; font-size: 30px; font-weight: bold;');
+        console.log('%cThis is a confidential document. Unauthorized copying or distribution is prohibited.', 'font-size: 16px;');
+      });
+    </script>
   </head>
   <body>
+    <!-- Your document content would go here -->
 
-    <!-- WATERMARK (OPTIONAL) -->
+    <!-- Watermark: bottom-right - positioned like the reference -->
     <div class="watermark">
-      <img src="Noetiq Black.png" alt="Noetiq">
+      <img src="logo-wordmark/Noetiq Black.png" alt="Noetiq" style="width: 240px; height: auto;">
     </div>
-
-    <!-- TOP HEADER SECTION -->
-    <div class="confidential">CONFIDENTIAL</div>
-    <div class="header-top">
-      <div class="brand">RAT &amp; BOA</div>
-      <div class="title">STRATEGIC ANALYSIS DOSSIER (DRESSES)</div>
-    </div>
-    <div class="date">February 2025</div>
-    <hr />
-
-    <!-- SECTION 1: OPENING SUMMARY -->
-    <h2 class="section-title">1. Opening Summary</h2>
-    <div class="section">
-      <p><strong>Key insights from the data:</strong></p>
-      <ul>
-        <li><strong>Only objective attributes</strong> were included—no brand-language or ambiguous terms.</li>
-        <li><strong>Competitors in scope:</strong> 11 brands – Bec &amp; Bridge, Camilla and Marc, Farm Rio, Frankie Shop, Ganni, House of CB, Me+Em, Meshki, Reformation, Rixo, Self Portrait.</li>
-        <li><strong>Total SKUs considered:</strong> 3,407.</li>
-        <li><strong>Top 5 competitor attributes R&amp;B does not mention:</strong> Cotton, Bra Friendly/Modesty, Strapless, Pleated.</li>
-      </ul>
-      <p><strong>Important Considerations:</strong></p>
-      <ul>
-        <li>If a brand doesn’t mention an attribute, it doesn’t necessarily mean they don’t have it—it just wasn’t explicitly stated in the product description.</li>
-        <li>When a brand <strong>includes</strong> an attribute in its product details, it is a clear confirmation that they offer it.</li>
-        <li>Comparing what brands highlight reveals their priorities, exposing messaging gaps and positioning differences. This helps R&amp;B refine its product focus and improve tagging accuracy.</li>
-      </ul>
-    </div>
-
-    <!-- SECTION 2: CATEGORY LEADERSHIP & KEY STRENGTHS -->
-    <h2 class="section-title">2. Category Leadership &amp; Key Strengths</h2>
-    <div class="section">
-      <p><em>Market position and distinctive attributes</em></p>
-      <ul>
-        <li>Rat &amp; Boa co-leads slip dress market at 16.1% share (tied with Meshki)</li>
-        <li>R&amp;B mentions slip dresses in 29.9% of product descriptions vs. 3.3% competitor average</li>
-        <li>
-          Significant advantage in all printed designs (49.5% vs. 7.8% competitor average)
-          <ul>
-            <li>Within prints category: Animal (7.5%), Abstract (5.6%), Floral (10.3%), Other prints (26.1%)</li>
-            <li>Some competitors have higher specific print usage (e.g., Ganni's animal prints at 20.5%), but within smaller overall print offerings</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-    <!-- SECTION 3: R&B ATTRIBUTE DOMINANCE -->
-    <h2 class="section-title">3. R&amp;B Attribute Dominance</h2>
-    <div class="section">
-      <p><em>Percentage of each brand's collection featuring these attributes</em></p>
-      <table>
-        <thead>
-          <tr>
-            <th>Attribute</th>
-            <th>R&amp;B Usage<br/>(% of collection)</th>
-            <th>Competitor Avg<br/>(% of collections)</th>
-            <th>Top Competitors<br/>(% of their own collections)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Printed (All Types)</strong></td>
-            <td>49.5%</td>
-            <td>7.8%</td>
-            <td>Rixo (29.1%), Farm Rio (24.9%), Ganni (23.1%)</td>
-          </tr>
-          <tr>
-            <td><strong>Slip Dress</strong></td>
-            <td>29.9%</td>
-            <td>3.3%</td>
-            <td>Frankie Shop (44.4%), Rixo (20.5%), Camilla &amp; Marc (17.7%)</td>
-          </tr>
-          <tr>
-            <td><strong>Cowl Neck</strong></td>
-            <td>21.5%</td>
-            <td>3.2%</td>
-            <td>Reformation (9.6%), Camilla &amp; Marc (8.8%), Becandbridge (6.7%)</td>
-          </tr>
-          <tr>
-            <td><strong>Lace</strong><sup>*</sup></td>
-            <td>23.4%</td>
-            <td>15.6%</td>
-            <td>House of CB (32.2%), Self Portrait (25.5%), Camilla &amp; Marc (29.4%)</td>
-          </tr>
-          <tr>
-            <td><strong>Animal Print</strong></td>
-            <td>7.5%</td>
-            <td>0.6%</td>
-            <td>Ganni (20.5%), Rixo (2.6%), Farm Rio (1.4%)</td>
-          </tr>
-          <tr>
-            <td><strong>Abstract Print</strong></td>
-            <td>5.6%</td>
-            <td>0.1%</td>
-            <td>House of CB (0.2%), Meshki (0.1%)</td>
-          </tr>
-        </tbody>
-      </table>
-      <p style="font-size: 14px; margin-top: 10px;">
-        <em>*For R&amp;B, lace is typically used as an accent/detail rather than as the primary fabric, unlike some competitors who feature all-lace garments.</em>
-      </p>
-    </div>
-
-    <!-- SECTION 4: MODESTY FEATURE COMPARISON -->
-    <h2 class="section-title">4. Modesty Feature Comparison</h2>
-    <div class="section">
-      <p><em>How brands approach coverage and undergarment compatibility</em></p>
-      <table>
-        <thead>
-          <tr>
-            <th>Brand</th>
-            <th>Approach</th>
-            <th>Key Features</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Rat &amp; Boa</strong></td>
-            <td>Emphasizes sensuality</td>
-            <td>More sheer fabrics, less coverage, minimal to no bra-friendly designs</td>
-          </tr>
-          <tr>
-            <td><strong>Rixo</strong></td>
-            <td>"Closed-back" labeling (65%)</td>
-            <td>Non-sheer fabrics, modest cuts with good coverage</td>
-          </tr>
-          <tr>
-            <td><strong>Bec &amp; Bridge</strong></td>
-            <td>"Bra-friendly" filter (12.5%)</td>
-            <td>Structured designs, supportive elements</td>
-          </tr>
-          <tr>
-            <td><strong>Me+Em</strong></td>
-            <td>Dedicated "modest" filter</td>
-            <td>Non-sheer fabrics, higher necklines, longer hemlines</td>
-          </tr>
-          <tr>
-            <td><strong>Self Portrait</strong></td>
-            <td>High-fashion modest aesthetic</td>
-            <td>Heavy fabrics, structured silhouettes, embellishments</td>
-          </tr>
-        </tbody>
-      </table>
-      <p style="font-size: 14px; margin-top: 10px;">
-        <strong>Market Context:</strong> Most competitors generally offer more modest designs with greater coverage, less sheerness, and more naturally bra-friendly styles compared to Rat &amp; Boa, even when not explicitly labeled as such.
-      </p>
-    </div>
-
-    <!-- SECTION 5: STRATEGIC OPPORTUNITIES -->
-    <h2 class="section-title">5. Strategic Opportunities</h2>
-    <div class="section">
-      <p><em>Recommendations to maintain brand DNA while capturing new market segments</em></p>
-      <ol style="margin: auto; width: 90%;">
-        <li>
-          <strong>Maintain Category Leadership</strong>
-          <ul>
-            <li>Continue emphasis on slip dresses while enhancing printed and animal print offerings</li>
-            <li>Leverage unique abstract pattern dominance for differentiation</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Balanced Product Messaging</strong>
-          <ul>
-            <li>Introduce "bra-friendly" and "lined" descriptors for select pieces</li>
-            <li>Develop more modest styles while maintaining sensual brand aesthetic</li>
-            <li>Highlight premium materials more consistently (silk, georgette)</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Differentiation Strategy</strong>
-          <ul>
-            <li>Preserve core sensual aesthetic while strategically expanding modest options</li>
-            <li>Target specific occasions where modesty is valued without compromising brand DNA</li>
-          </ul>
-        </li>
-      </ol>
-    </div>
-
-    <!-- DISCLAIMER / NOTE -->
-    <p class="note">
-      Note: When attributes appear in product descriptions, it confirms their presence in the product. 
-      However, absence from descriptions does not necessarily mean the feature is missing—only that 
-      it wasn't highlighted in marketing materials. High usage percentages likely underrepresent 
-      actual prevalence, as some instances may not be mentioned. Confidence is highest for objective 
-      attributes like dress length (midi, maxi) and fabric composition (cotton, silk), while more 
-      subjective features like sheerness may be inconsistently mentioned across brands.
-    </p>
-
-    <!-- FOOTER -->
-    <div class="footer">
-      CONFIDENTIAL &amp; PROPRIETARY | © 2025 Noetiq. All Rights Reserved. | For Rat &amp; Boa Internal Use Only.
-    </div>
-
   </body>
 </html>
