@@ -8,15 +8,17 @@
         position: fixed;
         bottom: 20px;
         right: 20px;
-        display: flex; /* no flex-direction or margin needed since there's only one element */
+        display: flex; /* removed flex-direction column */
         align-items: center;
         opacity: 0.8;
         z-index: 1000;
       }
       .watermark img {
-        width: 240px; /* Large logo size */
+        width: 240px; /* Changed from 80px to match first file */
         height: auto;
+        /* removed margin-bottom */
       }
+      /* Removed watermark-text class as it's not used */
 
       body {
         font-family: 'Arial', sans-serif;
@@ -186,7 +188,7 @@
     <!-- Header -->
     <div class="header">
       <div class="confidential">CONFIDENTIAL BUSINESS OVERVIEW</div>
-      <div class="confidential" style="color: #cc0000; font-size: 14px; margin-bottom: 15px;"></div>
+      <div class="confidential" style="color: #cc0000; font-size: 14px; margin-bottom: 15px;"</div>
       <h1>
         NOETIQ: 'SEE WHAT OTHERS DON'T'
       </h1>
@@ -205,7 +207,7 @@
 
     <!-- SECTION 2 -->
     <div class="section">
-      <h2>Why We're Different - Unparalleled Competitor Benchmarking</h2>
+      <h2>Why We're Different - Unparralleled Competitor Benchmarking</h2>
       <p>
         Our proprietary methods dive deep into product attributes (like silhouettes, fabrics, 
         product details, trends and price architecture in a granularity no one else does), 
@@ -236,7 +238,7 @@
         </li>
         <li>
           <strong>Beyond Dashboards</strong> – We provide clear, data-driven recommendations that elevate 
-          your product lines and pricing strategies, allowing you to see what others don't.
+          your product lines and pricing strategies allowing you to see what others don't.
         </li>
       </ol>
     </div>
@@ -301,15 +303,15 @@
     </div>
 
     <!-- Confidentiality Notice -->
-    <div class="signature-section">
-      <h2>Confidentiality Notice</h2>
-      <p>
+    <div class="signature-section" style="text-align: center;">
+      <h2 style="text-align: center;">Confidentiality Notice</h2>
+      <p style="text-align: center;">
         All information contained in this document is strictly confidential. By viewing this document, 
         you agree to keep all information contained herein strictly confidential. You will not share, 
         distribute, or discuss any aspects of the Noetiq business, including its proprietary methodologies, 
         business model, or strategic plans with any third parties without explicit written permission.
       </p>
-      <p style="font-weight: bold; color: #cc0000;">
+      <p style="font-weight: bold; color: #cc0000; text-align: center;">
         Sharing this information with unauthorised parties constitutes a breach of confidentiality.
       </p>
     </div>
