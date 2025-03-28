@@ -4,50 +4,39 @@
     <meta charset="UTF-8">
     <title>Your Document Title</title>
     <style>
-      /* Watermark (Bottom-Right) - Matched from reference */
+      /* Watermark (Bottom-Right) - Only the large logo */
       .watermark {
         position: fixed;
         bottom: 20px;
         right: 20px;
         display: flex;
-        flex-direction: column;
         align-items: center;
         opacity: 0.8;
         z-index: 1000;
       }
       .watermark img {
-        width: 240px; /* Set to match the first document's 240px width */
+        width: 240px; /* Large Noetiq logo */
         height: auto;
-        margin-bottom: 5px;
       }
-      .watermark-text {
-        font-size: 12px;
-        color: #666;
-        text-transform: lowercase;
-        letter-spacing: 1px;
-      }
-
-      /* Protective styling to prevent selection - from reference */
+      
+      /* Protective styling to prevent selection */
       body {
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
       }
-
-      /* Your existing styles would go here */
     </style>
     <script>
-      // Disable right-click - from reference
+      // Disable right-click
       document.addEventListener('contextmenu', function(e) {
         e.preventDefault();
         alert('Right-clicking is disabled on this confidential document.');
         return false;
       });
       
-      // Disable keyboard shortcuts that could be used to copy content - from reference
+      // Disable keyboard shortcuts that could be used to copy content
       document.addEventListener('keydown', function(e) {
-        // Disable Ctrl+C, Ctrl+P, Ctrl+S, Ctrl+Shift+I
         if (
           (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 80 || e.keyCode === 83)) ||
           (e.ctrlKey && e.shiftKey && e.keyCode === 73)
@@ -57,7 +46,7 @@
         }
       });
       
-      // Additional security message on page load - from reference
+      // Additional security message on page load
       window.addEventListener('load', function() {
         console.log('%cWARNING!', 'color: red; font-size: 30px; font-weight: bold;');
         console.log('%cThis is a confidential document. Unauthorized copying or distribution is prohibited.', 'font-size: 16px;');
@@ -65,11 +54,11 @@
     </script>
   </head>
   <body>
-    <!-- Your document content would go here -->
+    <!-- Your document content goes here -->
 
-    <!-- Watermark: bottom-right - positioned like the reference -->
+    <!-- Watermark: large Noetiq logo only -->
     <div class="watermark">
-      <img src="logo-wordmark/Noetiq Black.png" alt="Noetiq" style="width: 240px; height: auto;">
+      <img src="logo-wordmark/Noetiq Black.png" alt="Noetiq">
     </div>
   </body>
 </html>
