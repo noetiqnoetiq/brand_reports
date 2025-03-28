@@ -19,7 +19,7 @@
         height: auto;
       }
       
-      /* Protective styling to prevent selection */
+      /* Prevent text selection */
       body {
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -35,7 +35,7 @@
         return false;
       });
       
-      // Disable keyboard shortcuts that could be used to copy content
+      // Disable certain keyboard shortcuts
       document.addEventListener('keydown', function(e) {
         if (
           (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 80 || e.keyCode === 83)) ||
@@ -46,7 +46,7 @@
         }
       });
       
-      // Additional security message on page load
+      // Log security message on page load
       window.addEventListener('load', function() {
         console.log('%cWARNING!', 'color: red; font-size: 30px; font-weight: bold;');
         console.log('%cThis is a confidential document. Unauthorized copying or distribution is prohibited.', 'font-size: 16px;');
@@ -54,9 +54,9 @@
     </script>
   </head>
   <body>
-    <!-- Your document content goes here -->
+    <!-- Document content goes here -->
 
-    <!-- Watermark: large Noetiq logo only -->
+    <!-- Watermark: only the large Noetiq logo -->
     <div class="watermark">
       <img src="logo-wordmark/Noetiq Black.png" alt="Noetiq">
     </div>
