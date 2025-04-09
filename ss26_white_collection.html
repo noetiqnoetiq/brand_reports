@@ -4,18 +4,14 @@
     <meta charset="UTF-8" />
     <title>Rat & Boa SS26 White Collection Report</title>
     <style>
-      /*************
-       * BASIC RESET
-       *************/
+      /* BASIC RESET */
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
 
-      /*******************
-       * GLOBAL STYLES
-       *******************/
+      /* GLOBAL STYLES */
       body {
         font-family: 'Times New Roman', Times, serif;
         background-color: #ffffff;
@@ -48,18 +44,14 @@
         font-weight: 600;
       }
 
-      /****************************
-       * CONTAINER & PAGE WRAPPER
-       ****************************/
+      /* CONTAINER & PAGE WRAPPER */
       .page-container {
         max-width: 1100px;
         margin: 0 auto;
         padding: 0 20px 40px;
       }
 
-      /******************
-       * TOP NAVIGATION
-       ******************/
+      /* TOP NAVIGATION */
       .top-nav {
         display: flex;
         justify-content: center;
@@ -101,9 +93,7 @@
         background-color: #000000;
       }
 
-      /***********************
-       * HEADER & CONFIDENTIAL
-       ***********************/
+      /* HEADER & CONFIDENTIAL */
       .header {
         text-align: center;
         margin-bottom: 40px;
@@ -145,9 +135,7 @@
         color: #333;
       }
 
-      /*****************
-       * SECTION TITLES
-       *****************/
+      /* SECTION TITLES */
       h2 {
         font-size: 28px;
         color: #000;
@@ -165,9 +153,7 @@
         font-weight: normal;
       }
 
-      /*********************************
-       * CONTENT SECTION & GREY BOXES
-       *********************************/
+      /* CONTENT SECTION & GREY BOXES */
       .section {
         margin-bottom: 60px;
         scroll-margin-top: 70px;
@@ -236,7 +222,7 @@
         color: #333;
       }
 
-      /* Single Pie Chart (Clean) */
+      /* Simple pie chart */
       .pie-chart-container {
         display: flex;
         justify-content: center;
@@ -249,19 +235,12 @@
         width: 300px;
         height: 300px;
         border-radius: 50%;
-        /* 
-          Dresses (43%): #e84c66 
-          Separates (18%): #0f8b8d 
-          Jewelry (21%): #ffc857 
-          Bags (11%): #6b2d5c 
-          Knitwear (7%): #2e933c 
-        */
         background: conic-gradient(
-          #e84c66 0% 43%,
-          #0f8b8d 43% 61%,
-          #ffc857 61% 82%,
-          #6b2d5c 82% 93%,
-          #2e933c 93% 100%
+          #e84c66 0% 43%, /* Vibrant ruby red for dresses */
+          #0f8b8d 43% 61%, /* Emerald teal for separates */
+          #ffc857 61% 82%, /* Warm golden sun for jewelry */
+          #6b2d5c 82% 93%, /* Rich amethyst purple for bags */
+          #2e933c 93% 100% /* Vibrant emerald green for knitwear */
         );
         margin-bottom: 20px;
         box-shadow: 0 0 20px rgba(0,0,0,0.05);
@@ -301,9 +280,7 @@
         flex: 1;
       }
 
-      /***************************
-       * WATERMARK (BOTTOM RIGHT)
-       ***************************/
+      /* WATERMARK (PLACEHOLDER) */
       .watermark {
         position: fixed;
         bottom: 20px;
@@ -315,14 +292,14 @@
         z-index: 1000;
       }
       
-      .watermark img {
-        width: 200px;
-        height: auto;
+      .brand-text {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        letter-spacing: 1px;
+        color: #333;
       }
 
-      /********
-       * FOOTER
-       ********/
+      /* FOOTER */
       .footer {
         margin-top: 60px;
         text-align: center;
@@ -332,22 +309,38 @@
         padding: 20px 0;
         letter-spacing: 0.5px;
       }
+
+      /* Added Sections styles */
+      #category-mix, #pricing, #implementation {
+        padding-top: 20px;
+        min-height: 200px;
+      }
+
+      /* Placeholder for missing sections */
+      .placeholder-section {
+        background-color: #f9f9f9;
+        padding: 30px;
+        border: 1px dashed #ccc;
+        text-align: center;
+        color: #666;
+      }
     </style>
   </head>
   <body>
     
     <!-- WATERMARK -->
     <div class="watermark">
-      <img src="Rat_and_Boa_logo_(2023).png" alt="Rat & Boa Watermark">
+      <div class="brand-text">RAT & BOA</div>
     </div>
 
     <!-- TOP NAVIGATION WITH REPORT SECTIONS -->
-    <div class="top-nav">
+          <div class="top-nav">
       <ul>
-        <li class="active"><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#introduction">INTRODUCTION</a></li>
         <li><a href="#range-count">RANGE COUNT</a></li>
         <li><a href="#category-mix">CATEGORY MIX</a></li>
         <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#competitors-reference">COMPETITORS</a></li>
         <li><a href="#implementation">IMPLEMENTATION</a></li>
       </ul>
     </div>
@@ -470,7 +463,6 @@
           </li>
         </ul>
 
-        <!-- SINGLE, CLEAN PIE CHART WITH CORRECT COLORS -->
         <div class="pie-chart-container">
           <h3>Recommended Collection Structure</h3>
           <div class="pie-chart"></div>
@@ -500,9 +492,10 @@
 
         <h3>Implementation Flexibility</h3>
         <p>
-          While we recommend launching with 30 core SKUs, we've identified an additional 8 reserve SKUs that 
-          could be activated based on early performance indicators. This phased approach provides both structure 
-          and flexibility, allowing Rat & Boa to optimise inventory investment while maintaining agility.
+          While we recommend launching with 30 core SKUs, we've identified an additional 8 reserve SKUs 
+          that could be used as potential swap-outs should the brand want to change elements of the collection
+          based on early performance indicators or shifting market trends. This provides flexibility without 
+          requiring full development and production of all 38 SKUs simultaneously.
         </p>
       </div>
 
@@ -511,172 +504,503 @@
         <h2>CATEGORY MIX STRATEGY</h2>
         
         <p>
-          Our 30 SKU recommendation for the SS26 White Collection features a carefully balanced 
-          category mix that both respects market norms and leverages Rat & Boa's unique strengths. 
-          This approach optimises commercial potential while maintaining the brand's distinctive DNA.
+          The refined 30-SKU collection maintains strategic balance across categories while prioritizing proven revenue drivers
+          and aligning with competitive benchmarking insights.
         </p>
-
+        
+        <div class="grey-box">
+          <h3>Evolution of Collection Size</h3>
+          <div class="data-row" style="margin-bottom: 20px;">
+            <div style="flex: 1;">
+              <strong>2024 Genesis Collection:</strong> 9 SKUs
+            </div>
+            <div style="flex: 1;">
+              <strong>2025 White Collection:</strong> 26 SKUs (+189%)
+            </div>
+            <div style="flex: 1;">
+              <strong>2026 White Collection:</strong> 30 SKUs (+15.4%)
+            </div>
+          </div>
+        </div>
+        
+        <h3>Strategic Decision Evolution</h3>
+        <p>
+          Our planning approach evolved through multiple analytical phases:
+        </p>
+        <ul>
+          <li>
+            <strong>Initial Proposal:</strong> 38 SKUs with significant category expansion
+          </li>
+          <li>
+            <strong>Intermediate Analysis:</strong> Consideration of a 28-SKU core collection with 10 reserve SKUs (total 38)
+          </li>
+          <li>
+            <strong>Final Recommendation:</strong> 30-SKU collection with strategic flexibility to introduce additional styles based on performance
+          </li>
+        </ul>
+        
         <div class="two-col">
           <div class="col">
             <h3>Category Distribution</h3>
             <p>
-              The collection's category breakdown intentionally overweights dresses—Rat & Boa's 
-              signature category—while maintaining strategic representation across complementary categories:
+              Our 30-SKU collection is strategically balanced across categories:
             </p>
             <ul>
-              <li>Dresses: 13 SKUs (43.3%)</li>
-              <li>Jewelry: 6 SKUs (20.0%)</li>
-              <li>Separates: 5 SKUs (16.7%)</li>
-              <li>Bags: 3 SKUs (10.0%)</li>
-              <li>Knitwear: 2 SKUs (6.7%)</li>
-              <li>Headpieces: 1 SKU (3.3%)</li>
+              <li>
+                <strong>Dresses (43%):</strong> Maintained as the dominant category with emphasis on maxi styles
+              </li>
+              <li>
+                <strong>Separates (18%):</strong> Strategic selection of pieces that complement the dress assortment, 
+                including opportunities to introduce tailoring and leather items
+              </li>
+              <li>
+                <strong>Jewelry (21%):</strong> Substantial allocation due to strong margins, cross-selling potential, 
+                and impressive early production samples
+              </li>
+              <li>
+                <strong>Bags (11%):</strong> Focused approach with key silhouettes
+              </li>
+              <li>
+                <strong>Knitwear (7%):</strong> Essential inclusion for styling versatility and layering options
+              </li>
             </ul>
           </div>
           
           <div class="col">
             <div class="chart-container">
-              <h3>Market Comparison</h3>
+              <h3>Dress Length Strategy</h3>
               <div class="data-row">
-                <div class="data-label">Dresses</div>
+                <div class="data-label">Maxi Dresses</div>
                 <div class="data-bar-container">
-                  <div class="data-bar" style="width: 43.3%; background-color: #e6e6e6;"></div>
-                  <div class="data-value">43.3% vs 20.8% market</div>
+                  <div class="data-bar" style="width: 58%; background-color: #e84c66;"></div>
+                  <div class="data-value">58%</div>
                 </div>
               </div>
               <div class="data-row">
-                <div class="data-label">Jewelry</div>
+                <div class="data-label">Mini Dresses</div>
                 <div class="data-bar-container">
-                  <div class="data-bar" style="width: 20.0%; background-color: #e6e6e6;"></div>
-                  <div class="data-value">20.0% vs 10.4% market</div>
+                  <div class="data-bar" style="width: 33%; background-color: #e84c66;"></div>
+                  <div class="data-value">33%</div>
                 </div>
               </div>
               <div class="data-row">
-                <div class="data-label">Separates</div>
+                <div class="data-label">Midi Dresses</div>
                 <div class="data-bar-container">
-                  <div class="data-bar" style="width: 16.7%; background-color: #e6e6e6;"></div>
-                  <div class="data-value">16.7% vs 8.3% market</div>
+                  <div class="data-bar" style="width: 9%; background-color: #e84c66;"></div>
+                  <div class="data-value">9%</div>
                 </div>
               </div>
-              <div class="data-row">
-                <div class="data-label">Knitwear</div>
-                <div class="data-bar-container">
-                  <div class="data-bar" style="width: 6.7%; background-color: #e6e6e6;"></div>
-                  <div class="data-value">6.7% vs 14.6% market</div>
-                </div>
-              </div>
+              <p style="margin-top: 15px; font-size: 14px;">
+                Distribution reflects historical performance with top-selling styles (Lorela, Asteria) being maxis.
+              </p>
             </div>
           </div>
         </div>
-
+        
+        <h3>HEADPIECES: OPPORTUNITY CATEGORY</h3>
+        
+        <p>
+          While finalizing our 30-SKU core collection, we identified a significant opportunity to introduce 
+          statement headpieces as a strategic category extension for the SS26 White Collection.
+        </p>
+        
         <div class="grey-box">
-          <h3>Strategic Category Insights</h3>
+          <h4>Market Gap Analysis</h4>
           <p>
-            Our category mix intentionally diverges from market averages to emphasise Rat & Boa's 
-            strengths while strategically expanding into complementary categories. Key insights include:
+            Our competitive analysis revealed a distinctive opportunity: none of our direct competitors currently 
+            offer elevated headpieces in their white/bridal collections (outside of wedding veils from Rixo), yet several 
+            luxury brands have successfully ventured into this hybrid accessory space.
           </p>
+          
+          <div style="display: flex; justify-content: space-between; margin-top: 20px; flex-wrap: wrap;">
+            <div style="flex: 0 0 30%; text-align: center; margin-bottom: 20px;">
+              <img src="/api/placeholder/260/260" alt="Clio Peppiatt headband" style="width: 100%; margin-bottom: 10px; border: 1px solid #eee;"/>
+              <p style="font-size: 14px; margin: 0;"><strong>Clio Peppiatt</strong></p>
+              <p style="font-size: 13px; margin: 0; color: #666;">Crystal Headband €275 (£235)</p>
+            </div>
+            <div style="flex: 0 0 30%; text-align: center; margin-bottom: 20px;">
+              <img src="/api/placeholder/260/260" alt="Pucci headband" style="width: 100%; margin-bottom: 10px; border: 1px solid #eee;"/>
+              <p style="font-size: 14px; margin: 0;"><strong>Pucci</strong></p>
+              <p style="font-size: 13px; margin: 0; color: #666;">Iride-Print Crystal Headband £155</p>
+            </div>
+            <div style="flex: 0 0 30%; text-align: center; margin-bottom: 20px;">
+              <img src="/api/placeholder/260/260" alt="Magda Butrym crochet bonnet" style="width: 100%; margin-bottom: 10px; border: 1px solid #eee;"/>
+              <p style="font-size: 14px; margin: 0;"><strong>Magda Butrym</strong></p>
+              <p style="font-size: 13px; margin: 0; color: #666;">Crochet Bonnet €829 (£705)</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="two-col" style="margin-top: 30px;">
+          <div class="col">
+            <h4>Rat & Boa Opportunity</h4>
+            <p>
+              We propose introducing a limited capsule of 2-3 statement headpieces that would:
+            </p>
+            <ul>
+              <li>Fill a distinctive market gap between everyday headbands and full bridal veils</li>
+              <li>Leverage our design expertise in embellishment and hand-finishing techniques</li>
+              <li>Create a truly unique offering compared to our direct competitors</li>
+              <li>Provide compelling editorial styling opportunities for the entire collection</li>
+              <li>Offer excellent margins and gift potential with minimal inventory risk</li>
+            </ul>
+            
+            <div style="margin-top: 20px;">
+              <h4>Price Architecture</h4>
+              <p style="font-size: 14px; margin-bottom: 10px;">
+                The proposal is to introduce one piece in the Better tier, with a Best tier version held in reserve:
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding: 8px 0;">
+                <span><strong>Better Tier:</strong> £275-325</span>
+                <span style="color: #666; font-size: 14px;">Mid-range embellishment</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0;">
+                <span><strong>Best Tier:</strong> £425-475</span>
+                <span style="color: #666; font-size: 14px;">Premium embellishment</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div style="background-color: #f9f9f9; padding: 20px; text-align: center;">
+              <img src="/api/placeholder/320/360" alt="Rat & Boa Headpiece Concept" style="max-width: 100%; border: 1px solid #eee;"/>
+              <p style="font-size: 14px; margin-top: 10px; margin-bottom: 0;"><strong>Rat & Boa Concept</strong></p>
+              <p style="font-size: 13px; margin-top: 5px; color: #666;">Distinctive design with elevated embellishment and hand-finishing</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="grey-box" style="margin-top: 30px;">
+          <h4>Strategic Positioning Rationale</h4>
           <ul>
             <li>
-              <strong>Dress Dominance:</strong> At 43.3% (vs. market average of 20.8%), our dress-forward 
-              strategy maintains Rat & Boa's signature positioning while direct competitors like 
-              Réalisation Par and Rixo show greater category diversification.
+              <strong>Distinctive Category Positioning:</strong> Our proposed headpieces would occupy a unique space between 
+              simpler headbands (Pucci at £155) and luxury pieces (Magda Butrym at £705)
             </li>
             <li>
-              <strong>Jewelry Emphasis:</strong> At 20% of the mix (vs. market average of 10.4%), 
-              we've prioritised jewelry as a key accessory category, outpacing direct competitors 
-              like Self Portrait while providing strong margin opportunity.
+              <strong>Brand Elevation:</strong> Aligns with Rat & Boa's aspiration to move from lower-mid tier to mid-range 
+              positioning, with an exit price for jewelry currently at £500
             </li>
             <li>
-              <strong>Considered Knitwear Approach:</strong> With an intentionally modest 6.7% representation 
-              (vs. market average of 14.6%), our approach to knitwear is measured, allowing the brand 
-              to test the category without overcommitting inventory.
+              <strong>Production Advantage:</strong> While not European-made like Magda Butrym's pieces, our elevated designs 
+              and quality materials would justify premium positioning
+            </li>
+            <li>
+              <strong>Value Perception:</strong> The hat/jewelry hybrid concept offers uniqueness in the bridal market, creating 
+              perceived value as a statement investment piece and giving customers a reason to shop with Rat & Boa over 
+              direct competitors, creating upsell opportunity
             </li>
           </ul>
         </div>
+      </div>
 
-        <h3>Dress Length Strategy</h3>
+      <!-- PRICING SECTION -->
+      <div id="pricing" class="section">
+        <h2>PRICING STRATEGY</h2>
+        
         <p>
-          Within the dress assortment, we've developed a length strategy that emphasises Rat & Boa's 
-          signature maxi silhouettes while ensuring representation across key lengths:
+          The 30-SKU collection maintains a carefully calibrated pricing strategy that positions the White Collection 
+          at a premium while becoming more sustainable in its relationship to the mainline offering.
+        </p>
+        
+        <div class="grey-box">
+          <h3>Price Architecture Evolution</h3>
+          <div class="data-row" style="margin-bottom: 20px;">
+            <div style="flex: 1;">
+              <strong>2024 Genesis:</strong> +58.6% premium
+            </div>
+            <div style="flex: 1;">
+              <strong>2025 Collection:</strong> +74.7% premium
+            </div>
+            <div style="flex: 1;">
+              <strong>2026 Collection:</strong> +34.9% premium
+            </div>
+          </div>
+          <p>
+            The 2026 collection maintains the same median price point of £325 as the 2025 collection, 
+            but represents a 34.9% premium over the mainline collection (now £241) due to the strategic 
+            elevation of the mainline collection's price positioning.
+          </p>
+        </div>
+        
+        <h3>The Story Behind Our Pricing Strategy</h3>
+        <p>
+          When developing our pricing approach, we analyzed the relationship between White/Bridal collections and mainline 
+          offerings across our competitive set. Using median values to ensure our analysis wasn't skewed by outliers, we 
+          discovered a fascinating pricing narrative:
         </p>
         
         <div class="two-col">
           <div class="col">
-            <ul>
-              <li>Maxi Dresses: 8 SKUs (61.5%)</li>
-              <li>Midi Dresses: 3 SKUs (23.1%)</li>
-              <li>Mini Dresses: 2 SKUs (15.4%)</li>
-            </ul>
-            <p>
-              This distribution recognises the brand's historical success with maxi silhouettes 
-              while building presence in the growing midi category, particularly in the Better price segment.
-            </p>
-          </div>
-          
-          <div class="col">
             <div class="chart-container">
-              <h3>Dress Length Mix</h3>
-              <div style="display: flex; height: 200px; margin-top: 20px;">
-                <div style="flex: 0.615; background-color: #e6e6e6; position: relative; display: flex; justify-content: center; align-items: center;">
-                  <div style="color: #333; font-weight: bold;">61.5%<br>MAXI</div>
+              <h4 style="margin-top: 0;">White Collection Premium by Brand</h4>
+              <div class="data-row">
+                <div class="data-label">Rixo</div>
+                <div class="data-bar-container">
+                  <div class="data-bar" style="width: 61%; background-color: #d5a6bd;"></div>
+                  <div class="data-value">+61.2%</div>
                 </div>
-                <div style="flex: 0.231; background-color: #d9d9d9; position: relative; display: flex; justify-content: center; align-items: center;">
-                  <div style="color: #333; font-weight: bold;">23.1%<br>MIDI</div>
+              </div>
+              <div class="data-row">
+                <div class="data-label">Rat & Boa (2025)</div>
+                <div class="data-bar-container">
+                  <div class="data-bar" style="width: 75%; background-color: #b4a7d6;"></div>
+                  <div class="data-value">+74.7%</div>
                 </div>
-                <div style="flex: 0.154; background-color: #cccccc; position: relative; display: flex; justify-content: center; align-items: center;">
-                  <div style="color: #333; font-weight: bold;">15.4%<br>MINI</div>
+              </div>
+              <div class="data-row">
+                <div class="data-label">Rat & Boa (2026)</div>
+                <div class="data-bar-container">
+                  <div class="data-bar" style="width: 35%; background-color: #a2c4c9;"></div>
+                  <div class="data-value">+34.9%</div>
+                </div>
+              </div>
+              <div class="data-row">
+                <div class="data-label">SIR the Label</div>
+                <div class="data-bar-container">
+                  <div class="data-bar" style="width: 30%; background-color: #d5a6bd;"></div>
+                  <div class="data-value">+30.0%</div>
+                </div>
+              </div>
+              <div class="data-row">
+                <div class="data-label">Competitor Average</div>
+                <div class="data-bar-container">
+                  <div class="data-bar" style="width: 25%; background-color: #d5a6bd;"></div>
+                  <div class="data-value">+25.3%</div>
+                </div>
+              </div>
+              <div class="data-row">
+                <div class="data-label">Bec and Bridge</div>
+                <div class="data-bar-container">
+                  <div class="data-bar" style="width: 15%; background-color: #d5a6bd;"></div>
+                  <div class="data-value">+15.4%</div>
+                </div>
+              </div>
+              <div class="data-row">
+                <div class="data-label">Self Portrait</div>
+                <div class="data-bar-container">
+                  <div class="data-bar" style="width: 0%; background-color: #d5a6bd;"></div>
+                  <div class="data-value">-5.3%</div>
                 </div>
               </div>
             </div>
           </div>
+          
+          <div class="col">
+            <h4>Premium Positioning Evolution</h4>
+            <p>
+              Our 2025 White Collection carried a substantial premium (+74.7%) over our mainline median price—significantly 
+              higher than the competitor average (+25.3%). Only Rixo (+61.2%) came close to our premium positioning.
+            </p>
+                          <p>
+              For 2026, we've intentionally moderated this premium to +34.9% by increasing the mainline median price 
+              while maintaining the White Collection median at £325, creating a more sustainable pricing architecture 
+              while still maintaining a position well above the competitor average.
+            </p>
+            
+            <h4>The Luxury Sweet Spot</h4>
+            <p>
+              This strategic evolution reflects our brand's growing confidence. As our mainline median prices 
+              have naturally increased (from £186 to £241), our White Collection doesn't need to maintain the 
+              same extreme percentage premium to achieve a luxury positioning.
+            </p>
+            <p>
+              At £325 median price, we've positioned the collection:
+            </p>
+            <ul>
+              <li>Above SIR the Label (+30.0%)</li>
+              <li>Above Bec and Bridge (+15.4%)</li>
+              <li>Alongside the competitor median (£326)</li>
+              <li>With a pricing story that feels special without being inaccessible</li>
+            </ul>
+          </div>
         </div>
-
-        <h3>Price Segmentation</h3>
+        
         <p>
-          The collection's price architecture creates a balanced good-better-best segmentation with
-          a strategic emphasis on the Better segment:
+          Interestingly, Self Portrait takes a unique approach, actually pricing their bridal collection below their 
+          mainline (-5.3%)—a reminder that pricing should always tell your brand's unique story rather than following 
+          formulas.
+        </p>
+      </div>
+
+      <!-- IMPLEMENTATION SECTION -->
+      <div id="implementation" class="section">
+        <h2>IMPLEMENTATION STRATEGY</h2>
+        
+        <p>
+          Our implementation approach balances structure with flexibility, creating a framework for executing the 
+          30-SKU collection while maintaining agility to respond to market performance.
+        </p>
+        
+        <div class="grey-box">
+          <h3>Rationale for 30 SKUs</h3>
+          <p>
+            Based on our analysis, we recommend a 30-SKU collection for the following key reasons:
+          </p>
+          <ul>
+            <li>
+              <strong>Industry Benchmark Alignment:</strong> With Rat & Boa's total site count at 214 SKUs, our 30-piece collection 
+              represents 14% of total assortment—slightly above industry average but within the competitive range
+            </li>
+            <li>
+              <strong>Resource Optimisation:</strong> Allows design and production to focus on higher-quality pieces
+            </li>
+            <li>
+              <strong>Risk Mitigation:</strong> Provides sufficient range while controlling inventory risk
+            </li>
+          </ul>
+        </div>
+        
+        <h3>Phased Implementation Approach</h3>
+        
+        <div class="two-col">
+          <div class="col">
+            <h4>Launch Strategy</h4>
+            <p>
+              We recommend a focused approach to the 30-SKU collection, with particular emphasis on:
+            </p>
+            <ul>
+              <li>Early development of signature dress styles to establish the collection identity</li>
+              <li>Strategic scheduling of production for new category pieces</li>
+              <li>Editorial planning to highlight versatility across occasions</li>
+            </ul>
+          </div>
+          
+          <div class="col">
+            <div class="grey-box" style="margin-top: 0;">
+              <h4>Reserve SKU Strategy</h4>
+              <p>
+                The 8 reserve SKUs function as potential alternatives rather than additions, 
+                allowing for strategic adjustments without full development of 38 SKUs.
+              </p>
+              <p style="font-size: 14px; margin-bottom: 0;">
+                <strong>Key benefit:</strong> Flexibility without the resource commitment 
+                of developing all options simultaneously.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="competitors-reference">
+        <h2>COMPETITIVE LANDSCAPE ASSESSMENT</h2>
+        
+        <p>
+          To ensure our White Collection strategy aligns with market opportunities while maintaining brand distinctiveness, 
+          we've analyzed key competitors' design approaches and identified strategic gaps in the market.
         </p>
         
         <div class="two-col">
           <div class="col">
-            <ul>
-              <li><strong>Good:</strong> 9 SKUs (30.0%)</li>
-              <li><strong>Better:</strong> 15 SKUs (50.0%)</li>
-              <li><strong>Best:</strong> 6 SKUs (20.0%)</li>
-            </ul>
-            <p>
-              This intentional weighting towards the middle Better segment allows for accessibility
-              at entry price points while providing opportunity to elevate average order value through
-              the sizeable Better assortment.
-            </p>
+            <h3>Rat & Boa's Core Strengths</h3>
+            <div class="grey-box">
+              <p><strong>Where We Lead:</strong></p>
+              <ul>
+                <li><strong>Bias-Cut Expertise:</strong> Our signature flowing silhouettes and cowl necklines remain our defining DNA, shared with some competitors but executed with distinctive Rat & Boa flair</li>
+                <li><strong>Open & Low Backs:</strong> Our hallmark open-back slip designs offer a sensual yet elegant appeal that resonates with our core customer</li>
+                <li><strong>Strategic Cut-Outs:</strong> We're more adventurous with skin-revealing details while maintaining sophistication</li>
+                <li><strong>Lightweight Fabrics:</strong> Our expertise with georgette, crinkle chiffon, and draped materials creates ethereal movement</li>
+                <li><strong>Distinctive Prints:</strong> Our exclusive prints have become a recognizable signature, similar to Rixo's approach but with our unique aesthetic</li>
+              </ul>
+            </div>
           </div>
           
           <div class="col">
-            <div class="chart-container">
-              <h3>Price Segmentation</h3>
-              <div class="data-row">
-                <div class="data-label">Good (£125-£295)</div>
-                <div class="data-bar-container">
-                  <div class="data-bar" style="width: 30%; background-color: #e6e6e6;"></div>
-                  <div class="data-value">30.0%</div>
-                </div>
-              </div>
-              <div class="data-row">
-                <div class="data-label">Better (£325-£625)</div>
-                <div class="data-bar-container">
-                  <div class="data-bar" style="width: 50%; background-color: #e6e6e6;"></div>
-                  <div class="data-value">50.0%</div>
-                </div>
-              </div>
-              <div class="data-row">
-                <div class="data-label">Best (£700-£900)</div>
-                <div class="data-bar-container">
-                  <div class="data-bar" style="width: 20%; background-color: #e6e6e6;"></div>
-                  <div class="data-value">20.0%</div>
-                </div>
-              </div>
+            <h3>Competitive White Market Gaps</h3>
+            <div class="grey-box">
+              <p><strong>Opportunities to Explore:</strong></p>
+              <ul>
+                <li><strong>Structured Bodices:</strong> Competitors like SIR and Self Portrait offer corseted or underwired cups that provide more bust support</li>
+                <li><strong>Statement Sleeves:</strong> Ganni and Self Portrait dominate with puff sleeves and defined shoulders—elements largely absent from our collections</li>
+                <li><strong>Rigid Fabrics:</strong> SIR and Reformation feature structured linen and cotton pieces with architectural seaming</li>
+                <li><strong>Waist Definition:</strong> Competitors often use belts, smocking, or panel construction to create defined waistlines</li>
+                <li><strong>Modest Options:</strong> High necklines and collared designs offer alternative coverage options that we could explore</li>
+              </ul>
             </div>
           </div>
         </div>
+        
+        <h3>Competitive Positioning Map</h3>
+        <div style="margin: 30px 0; padding: 20px; background-color: #f9f9f9; text-align: center; position: relative; height: 400px;">
+          <!-- Axes -->
+          <div style="position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; background-color: #ccc;"></div>
+          <div style="position: absolute; left: 0; right: 0; top: 50%; height: 1px; background-color: #ccc;"></div>
+          
+          <!-- Axis labels -->
+          <div style="position: absolute; top: 5px; left: 50%; transform: translateX(-50%); font-size: 14px;">STRUCTURED</div>
+          <div style="position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%); font-size: 14px;">FLUID</div>
+          <div style="position: absolute; left: 5px; top: 50%; transform: translateY(-50%); font-size: 14px; writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg);">BOHEMIAN</div>
+          <div style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); font-size: 14px; writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg);">MINIMALIST</div>
+          
+          <!-- Brand positions -->
+          <div style="position: absolute; left: 35%; top: 80%; transform: translate(-50%, -50%); color: #000; font-weight: bold; padding: 8px 12px; border-radius: 20px; background-color: #a2c4c9; font-size: 14px;">RAT & BOA</div>
+          <div style="position: absolute; left: 80%; top: 30%; transform: translate(-50%, -50%); color: #000; padding: 6px 10px; border-radius: 15px; background-color: #f9f9f9; border: 1px solid #ccc; font-size: 12px;">CAMILLA & MARC</div>
+          <div style="position: absolute; left: 25%; top: 35%; transform: translate(-50%, -50%); color: #000; padding: 6px 10px; border-radius: 15px; background-color: #f9f9f9; border: 1px solid #ccc; font-size: 12px;">GANNI</div>
+          <div style="position: absolute; left: 75%; top: 75%; transform: translate(-50%, -50%); color: #000; padding: 6px 10px; border-radius: 15px; background-color: #f9f9f9; border: 1px solid #ccc; font-size: 12px;">BEC & BRIDGE</div>
+          <div style="position: absolute; left: 15%; top: 65%; transform: translate(-50%, -50%); color: #000; padding: 6px 10px; border-radius: 15px; background-color: #f9f9f9; border: 1px solid #ccc; font-size: 12px;">RIXO</div>
+          <div style="position: absolute; left: 65%; top: 15%; transform: translate(-50%, -50%); color: #000; padding: 6px 10px; border-radius: 15px; background-color: #f9f9f9; border: 1px solid #ccc; font-size: 12px;">SELF PORTRAIT</div>
+          <div style="position: absolute; left: 60%; top: 55%; transform: translate(-50%, -50%); color: #000; padding: 6px 10px; border-radius: 15px; background-color: #f9f9f9; border: 1px solid #ccc; font-size: 12px;">SIR THE LABEL</div>
+          <div style="position: absolute; left: 50%; top: 85%; transform: translate(-50%, -50%); color: #000; padding: 6px 10px; border-radius: 15px; background-color: #f9f9f9; border: 1px solid #ccc; font-size: 12px;">REFORMATION</div>
+          
+          <!-- Market gap -->
+          <div style="position: absolute; left: 30%; top: 30%; transform: translate(-50%, -50%); width: 80px; height: 60px; border: 2px dashed #e84c66; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #e84c66; padding: 5px; text-align: center;">OPPORTUNITY SPACE</div>
+        </div>
+        
+        <h3>Strategic Implications</h3>
+        <p>
+          While maintaining our signature bias-cut expertise and sensual aesthetic, the 30-SKU White Collection presents 
+          an opportunity to selectively incorporate design elements that broaden our appeal:
+        </p>
+        <ul>
+          <li>
+            <strong>Balanced Innovation:</strong> Introduce 3-4 pieces with more structured elements (underwire or corseting) 
+            while preserving our fluid DNA in the majority of the collection
+          </li>
+          <li>
+            <strong>Complementary Categories:</strong> Utilise accessories (particularly jewelry and bags) to enhance 
+            our core styles rather than dramatically shifting our apparel approach
+          </li>
+          <li>
+            <strong>Material Exploration:</strong> Experiment with structured fabrics in our signature silhouettes to 
+            bridge the gap between our aesthetic and the more architectural pieces offered by competitors
+          </li>
+          <li>
+            <strong>Increased Modesty Features:</strong> Consider non-sheer fabrics and more coverage options to cast 
+            a wider net and capture additional market share beyond our core customer
+          </li>
+        </ul>
+        
+        <p>
+          This strategic approach allows us to maintain our distinctive identity while thoughtfully expanding 
+          our appeal to capture white/bridal customers seeking both our signature fluidity and occasional structure.
+        </p>
+        
+        <div class="grey-box">
+          <h3>DIRECT COMPETITORS REFERENCE</h3>
+          <p>
+            Throughout this analysis, benchmarking has been conducted against the following direct competitors to Rat & Boa, 
+            selected based on positioning, aesthetic, audience, and pricing:
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 15px;">
+            <div>1. Bec and Bridge</div>
+            <div>2. Camilla and Marc</div>
+            <div>3. Faithfull</div>
+            <div>4. Farm Rio</div>
+            <div>5. Ganni</div>
+            <div>6. House of CB</div>
+            <div>7. Me and Em</div>
+            <div>8. Réalisation Par</div>
+            <div>9. Rixo</div>
+            <div>10. Self Portrait</div>
+            <div>11. Sir the Label</div>
+            <div>12. The Reformation</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        CONFIDENTIAL &amp; PROPRIETARY | RAT &amp; BOA | INTERNAL USE ONLY © 2025
       </div>
     </div> <!-- End page-container -->
 
